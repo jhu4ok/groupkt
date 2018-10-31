@@ -6,8 +6,9 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.util.List;
-@Getter(AccessLevel.PUBLIC) @Setter(AccessLevel.PUBLIC)  @AllArgsConstructor
+@Getter @AllArgsConstructor
 public class CountriesDTO {
-    int count;
-    List <CountryDTO> countries;
+
+    public List <CountryDTO> countries;
+    public int count = countries.size();
 }
