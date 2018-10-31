@@ -1,6 +1,4 @@
-C:\Users\Anhelina_Zhukova\Desktop\TestingFramework\src\test\java\scenarios\ListOfAllStatesOfACountry.java
-C:\Users\Anhelina_Zhukova\Desktop\TestingFramework\src\test\java\scenarios\StateOfACountry.java
-C:\Users\Anhelina_Zhukova\Desktop\TestingFramework\src\test\java\scenarios\CountryByCharacterAlphanumericISOCode.java
-C:\Users\Anhelina_Zhukova\Desktop\TestingFramework\src\test\java\scenarios\ListOfAllCountries.java
-C:\Users\Anhelina_Zhukova\Desktop\TestingFramework\src\test\java\scenarios\StateByText.java
-C:\Users\Anhelina_Zhukova\Desktop\TestingFramework\src\test\java\steps\Steps.java
+C:\Users\Ju4ok\groupkt\src\test\java\scenarios\CountryGetValidate.java
+C:\Users\Ju4ok\groupkt\src\test\java\scenarios\StateGetValidate.java
+C:\Users\Ju4ok\groupkt\src\test\java\assertions\CountryAssertions.java
+C:\Users\Ju4ok\groupkt\src\test\java\steps\Steps.java

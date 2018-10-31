@@ -1,5 +1,0 @@
-scenarios\StateOfACountry.class
-scenarios\CountryByCharacterAlphanumericISOCode.class
-scenarios\ListOfAllStatesOfACountry.class
-scenarios\ListOfAllCountries.class
-scenarios\StateByText.class
