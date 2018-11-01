@@ -1,27 +1,35 @@
 package steps;
 
+import dto.StateListResponseDTO;
+import dto.StateResponseDTO;
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import transfer.RestResponseConverter;
+import util.PropertiesUtil;
 
-import java.util.List;
-
-import static io.restassured.RestAssured.when;
-import static io.restassured.path.json.JsonPath.from;
 
 public class Steps {
+    private RestResponseConverter restResponseConverter = new RestResponseConverter();
 
 
-    public String getCountry() {
-        String response = when().get("/all").
-                then().extract().response().asString();
-        return response;
+    public StateResponseDTO getRequestForSingleState(String stateResourse) {
+
+        Response response = restResponseConverter.getRequest(stateResourse);
+        return restResponseConverter.objectRepresentationState(response);
 
     }
-    public void compareResultWithSentData(String response){
-        List<String> profilesResponse = from(response).getList("/all");
 
-        boolean profileFlag = true;
-        for ( String s:profilesResponse ){
+    public StateListResponseDTO getRequestForStatesList(String stateListResourse) {
 
-        }
+        Response response = restResponseConverter.getRequest(stateListResourse);
+        return restResponseConverter.objectRepresentationStateList(response);
+
     }
+
+    protected void getRequestWithAnyFreeFormText() {
+    }
+
 }
+
