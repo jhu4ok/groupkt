@@ -1,10 +1,11 @@
 package dto;
 
-import com.google.gson.annotations.SerializedName;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.util.List;
-@Getter
+
+@Getter @Setter
 public class StateListResponseDTO {
     private StateListResponseDTO RestResponse;
     private List<String> messages;

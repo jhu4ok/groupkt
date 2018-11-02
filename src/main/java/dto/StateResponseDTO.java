@@ -4,11 +4,13 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
+
 import java.util.List;
 
 @Getter
-@AllArgsConstructor
+@Setter
 public class StateResponseDTO {
+
     private StateResponseDTO RestResponse;
     private List<String> messages;
     private StateResponseDTO result;
@@ -19,6 +21,4 @@ public class StateResponseDTO {
     private String area;
     private String largest_city;
     private String capital;
-
-
 }

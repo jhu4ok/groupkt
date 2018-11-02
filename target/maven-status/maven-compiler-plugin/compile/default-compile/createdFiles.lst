@@ -1,4 +1,4 @@
-dto\CountryDTO.class
-dto\StateDTO.class
-dto\StatesDTO.class
-dto\CountriesDTO.class
+dto\StateListResponseDTO.class
+transfer\RestRequestTransfer.class
+dto\StateResponseDTO.class
+util\PropertiesUtil.class

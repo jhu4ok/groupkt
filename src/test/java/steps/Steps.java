@@ -2,34 +2,39 @@ package steps;
 
 import dto.StateListResponseDTO;
 import dto.StateResponseDTO;
-import io.restassured.RestAssured;
 import io.restassured.response.Response;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
-import transfer.RestResponseConverter;
-import util.PropertiesUtil;
+import transfer.RestRequestTransfer;
 
 
 public class Steps {
-    private RestResponseConverter restResponseConverter = new RestResponseConverter();
+
+    private RestRequestTransfer restRequestTransfer = new RestRequestTransfer();
 
 
-    public StateResponseDTO getRequestForSingleState(String stateResourse) {
+    public Response sendGetRequest(String stateResourse) {
 
-        Response response = restResponseConverter.getRequest(stateResourse);
-        return restResponseConverter.objectRepresentationState(response);
-
+        Response response = restRequestTransfer.getRequest(stateResourse);
+        return response;
     }
 
-    public StateListResponseDTO getRequestForStatesList(String stateListResourse) {
+    public Response sendGetWithText(String key, String value, String url) {
 
-        Response response = restResponseConverter.getRequest(stateListResourse);
-        return restResponseConverter.objectRepresentationStateList(response);
-
+        Response response = restRequestTransfer.getRequestUsingText(key, value, url);
+        return response;
     }
 
-    protected void getRequestWithAnyFreeFormText() {
+    public StateResponseDTO convertResponseToStateObject(Response response) {
+
+        StateResponseDTO stateResponseDTO = restRequestTransfer.objectRepresentationState(response);
+        return stateResponseDTO;
     }
+
+    public StateListResponseDTO convertResponseToStatesListObject(Response response) {
+
+        StateListResponseDTO stateListResponseDTO = restRequestTransfer.objectRepresentationStateList(response);
+        return stateListResponseDTO;
+    }
+
 
 }
 

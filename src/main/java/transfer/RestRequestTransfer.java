@@ -4,8 +4,10 @@ import dto.StateListResponseDTO;
 import dto.StateResponseDTO;
 
 import io.restassured.RestAssured;
+import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
+import io.restassured.specification.ResponseSpecification;
 import org.testng.Assert;
 import util.PropertiesUtil;
 
@@ -17,20 +19,21 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import static io.restassured.RestAssured.get;
 import static io.restassured.RestAssured.given;
 
 
-public class RestResponseConverter {
+public class RestRequestTransfer {
 
-    @BeforeMethod
     public static String initialiseBaseURI() {
         RestAssured.baseURI = PropertiesUtil.getURL("HOST_STATE");
         return RestAssured.baseURI;
     }
 
-    public static StateListResponseDTO objectRepresentationStateList(Response response) {
+    public StateListResponseDTO objectRepresentationStateList(Response response) {
         ResponseBody body = response.getBody();
-        return body.as(StateListResponseDTO.class);
+        StateListResponseDTO stateListResponseDTO = body.as(StateListResponseDTO.class);
+        return stateListResponseDTO;
     }
 
     public StateResponseDTO objectRepresentationState(Response response) {
@@ -41,19 +44,32 @@ public class RestResponseConverter {
 
     public Response getRequest(String url) {
         Response response =
-                given().
-                        get(url).
-                        then().log().all().
+                get(url).
+                        then().
+//                        log().all().
                         extract().response();
         return response;
     }
+
+    public Response getRequestUsingText(String key, String value, String url) {
+        Response response =
+                given().
+                        param(key, value).
+                        get(url).
+                        then().
+//                        log().all().
+                        extract().response();
+        return response;
+    }
+
+
 
     @Test
 
     public static void getRequestForSingleState() {
 
-//        Response response = RestResponseConverter.getRequest("/USA/AK");
-//        StateResponseDTO stateResponseDTO = RestResponseConverter.objectRepresentationState(response);
+//        Response response = RestRequestTransfer.getRequest("/USA/AK");
+//        StateResponseDTO stateResponseDTO = RestRequestTransfer.objectRepresentationState(response);
 //        System.out.println(stateResponseDTO.getRestResponse().getMessages());
 
     }
@@ -61,7 +77,7 @@ public class RestResponseConverter {
 
     @Test
     public void successGetResponse() {
-//        Response response = RestResponseConverter.getRequest("/USA/AK");
+//        Response response = RestRequestTransfer.getRequest("/USA/AK");
 
 
         Response response =

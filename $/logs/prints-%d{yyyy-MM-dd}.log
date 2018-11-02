@@ -1,0 +1,72 @@
+02-11-2018 18:04:10 DEBUG BasicClientConnectionManager:161 - Get connection for route {}->http://services.groupkt.com:80
+02-11-2018 18:04:10 DEBUG DefaultClientConnectionOperator:177 - Connecting to services.groupkt.com:80
+02-11-2018 18:04:10 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+02-11-2018 18:04:10 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+02-11-2018 18:04:10 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+02-11-2018 18:04:10 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+02-11-2018 18:04:10 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+02-11-2018 18:04:10 DEBUG DefaultClientConnection:274 - Sending request: GET /state/get/USA/AK HTTP/1.1
+02-11-2018 18:04:10 DEBUG wire:73 -  >> "GET /state/get/USA/AK HTTP/1.1[\r][\n]"
+02-11-2018 18:04:10 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+02-11-2018 18:04:10 DEBUG wire:73 -  >> "Host: services.groupkt.com[\r][\n]"
+02-11-2018 18:04:10 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+02-11-2018 18:04:10 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.1)[\r][\n]"
+02-11-2018 18:04:10 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+02-11-2018 18:04:10 DEBUG wire:73 -  >> "[\r][\n]"
+02-11-2018 18:04:10 DEBUG headers:278 - >> GET /state/get/USA/AK HTTP/1.1
+02-11-2018 18:04:10 DEBUG headers:281 - >> Accept: */*
+02-11-2018 18:04:10 DEBUG headers:281 - >> Host: services.groupkt.com
+02-11-2018 18:04:10 DEBUG headers:281 - >> Connection: Keep-Alive
+02-11-2018 18:04:10 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.1)
+02-11-2018 18:04:10 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+02-11-2018 18:04:10 DEBUG wire:73 -  << "HTTP/1.1 200 200[\r][\n]"
+02-11-2018 18:04:10 DEBUG wire:73 -  << "Date: Fri, 02 Nov 2018 16:04:10 GMT[\r][\n]"
+02-11-2018 18:04:10 DEBUG wire:73 -  << "Server: Apache/2.4.25 (Debian)[\r][\n]"
+02-11-2018 18:04:10 DEBUG wire:73 -  << "X-Content-Type-Options: nosniff[\r][\n]"
+02-11-2018 18:04:10 DEBUG wire:73 -  << "X-XSS-Protection: 1; mode=block[\r][\n]"
+02-11-2018 18:04:10 DEBUG wire:73 -  << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+02-11-2018 18:04:10 DEBUG wire:73 -  << "Pragma: no-cache[\r][\n]"
+02-11-2018 18:04:10 DEBUG wire:73 -  << "Expires: 0[\r][\n]"
+02-11-2018 18:04:10 DEBUG wire:73 -  << "X-Frame-Options: DENY[\r][\n]"
+02-11-2018 18:04:10 DEBUG wire:73 -  << "Keep-Alive: timeout=5, max=100[\r][\n]"
+02-11-2018 18:04:10 DEBUG wire:73 -  << "Connection: Keep-Alive[\r][\n]"
+02-11-2018 18:04:10 DEBUG wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+02-11-2018 18:04:10 DEBUG wire:73 -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+02-11-2018 18:04:10 DEBUG wire:73 -  << "[\r][\n]"
+02-11-2018 18:04:10 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 200
+02-11-2018 18:04:10 DEBUG headers:262 - << HTTP/1.1 200 200
+02-11-2018 18:04:10 DEBUG headers:265 - << Date: Fri, 02 Nov 2018 16:04:10 GMT
+02-11-2018 18:04:10 DEBUG headers:265 - << Server: Apache/2.4.25 (Debian)
+02-11-2018 18:04:10 DEBUG headers:265 - << X-Content-Type-Options: nosniff
+02-11-2018 18:04:10 DEBUG headers:265 - << X-XSS-Protection: 1; mode=block
+02-11-2018 18:04:10 DEBUG headers:265 - << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+02-11-2018 18:04:10 DEBUG headers:265 - << Pragma: no-cache
+02-11-2018 18:04:10 DEBUG headers:265 - << Expires: 0
+02-11-2018 18:04:10 DEBUG headers:265 - << X-Frame-Options: DENY
+02-11-2018 18:04:10 DEBUG headers:265 - << Keep-Alive: timeout=5, max=100
+02-11-2018 18:04:10 DEBUG headers:265 - << Connection: Keep-Alive
+02-11-2018 18:04:10 DEBUG headers:265 - << Transfer-Encoding: chunked
+02-11-2018 18:04:10 DEBUG headers:265 - << Content-Type: application/json;charset=UTF-8
+02-11-2018 18:04:10 DEBUG DefaultHttpClient:509 - Connection can be kept alive for 5000 MILLISECONDS
+02-11-2018 18:04:10 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json;charset=UTF-8
+02-11-2018 18:04:10 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+02-11-2018 18:04:11 DEBUG wire:73 -  << "11e[\r][\n]"
+02-11-2018 18:04:11 DEBUG wire:73 -  << "{[\n]"
+02-11-2018 18:04:11 DEBUG wire:73 -  << "  "RestResponse" : {[\n]"
+02-11-2018 18:04:11 DEBUG wire:73 -  << "    "messages" : [ "State found matching code [AK]." ],[\n]"
+02-11-2018 18:04:11 DEBUG wire:73 -  << "    "result" : {[\n]"
+02-11-2018 18:04:11 DEBUG wire:73 -  << "      "id" : 2,[\n]"
+02-11-2018 18:04:11 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+02-11-2018 18:04:11 DEBUG wire:73 -  << "      "name" : "Alaska",[\n]"
+02-11-2018 18:04:11 DEBUG wire:73 -  << "      "abbr" : "AK",[\n]"
+02-11-2018 18:04:11 DEBUG wire:73 -  << "      "area" : "1723337SKM",[\n]"
+02-11-2018 18:04:11 DEBUG wire:73 -  << "      "largest_city" : "Anchorage",[\n]"
+02-11-2018 18:04:11 DEBUG wire:73 -  << "      "capital" : "Juneau"[\n]"
+02-11-2018 18:04:11 DEBUG wire:73 -  << "    }[\n]"
+02-11-2018 18:04:11 DEBUG wire:73 -  << "  }[\n]"
+02-11-2018 18:04:11 DEBUG wire:87 -  << "}"
+02-11-2018 18:04:11 DEBUG wire:73 -  << "[\r][\n]"
+02-11-2018 18:04:11 DEBUG wire:73 -  << "0[\r][\n]"
+02-11-2018 18:04:11 DEBUG wire:73 -  << "[\r][\n]"
+02-11-2018 18:04:11 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@54d901aa
+02-11-2018 18:04:11 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive for 5000 MILLISECONDS
