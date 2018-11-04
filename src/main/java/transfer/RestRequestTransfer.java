@@ -75,84 +75,84 @@ public class RestRequestTransfer {
     }
 
 
-    @Test
-    public void successGetResponse() {
-//        Response response = RestRequestTransfer.getRequest("/USA/AK");
-
-
-        Response response =
-                given().
-                        get("/USA/AK");
-
-        ResponseBody body = response.getBody();
-
-        StateResponseDTO stateResponseDTO = body.as(StateResponseDTO.class);
-        System.out.println(stateResponseDTO.getRestResponse().getMessages());
-
-        Response response2 =
-                given().
-                        get("/USA/AK");
-
-        ResponseBody body2 = response.getBody();
-
-        StateResponseDTO stateResponseDTO2 = body2.as(StateResponseDTO.class);
-
-        System.out.println(stateResponseDTO.getRestResponse().getResult().getId());
-        System.out.println(stateResponseDTO.getRestResponse().getMessages());
-//        System.out.println(responseBody.RestResponse.result.get(0).id);
-//        Assert.assertEquals(responseBody.RestResponse.result.get(0).id, 82);
-    }
-
-    @Test
-    public void successGetAllResponse() {
-
-        Response response =
-                given().
-                        get("/IND/all");
-        ResponseBody body = response.getBody();
-        StateListResponseDTO responseBody = body.as(StateListResponseDTO.class);
-        System.out.println(responseBody.getRestResponse().getMessages());
-        System.out.println(response.getStatusCode());
-//        Assert.assertEquals(responseBody.RestResponse.result.get(0).id, 65);
-        List<String> messageSuccess = new ArrayList<String>();
-        messageSuccess.add("Total [36] records found.");
-        Assert.assertEquals(responseBody.getRestResponse().getMessages(), messageSuccess);
-    }
-
-    @Test
-    public void failureResponse() {
-
-        Response response =
-                given().
-                        get("/IND/al");
-        ResponseBody body = response.getBody();
-        StateResponseDTO responseBody = body.as(StateResponseDTO.class);
-        System.out.println(responseBody.getRestResponse().getMessages());
-//        List<String> messageFailure = new ArrayList<String>();
+//    @Test
+//    public void successGetResponse() {
+////        Response response = RestRequestTransfer.getRequest("/USA/AK");
 //
-//       messageFailure.add("No matching state found for requested code [IND->al].");
-        String msg = "No matching state found for requested code [IND->al].";
-
-
-//        Assert.assertEquals(responseBody.RestResponse.messages.get(0), msg);
-    }
-
-    @Test
-    public void successResponseList() {
-
-        Response response =
-                given().
-                        get("/IND/all");
-        ResponseBody body = response.getBody();
-        StateListResponseDTO responseBody = body.as(StateListResponseDTO.class);
-        System.out.println(responseBody.getRestResponse().getMessages());
-
-        List<String> messageSuccess = new ArrayList<String>();
-        messageSuccess.add("Total [36] records found.");
-        Assert.assertEquals(responseBody.getRestResponse().getMessages(), messageSuccess);
-
-
-    }
+//
+//        Response response =
+//                given().
+//                        get("/USA/AK");
+//
+//        ResponseBody body = response.getBody();
+//
+//        StateResponseDTO stateResponseDTO = body.as(StateResponseDTO.class);
+//        System.out.println(stateResponseDTO.getRestResponse().getMessages());
+//
+//        Response response2 =
+//                given().
+//                        get("/USA/AK");
+//
+//        ResponseBody body2 = response.getBody();
+//
+//        StateResponseDTO stateResponseDTO2 = body2.as(StateResponseDTO.class);
+//
+//        System.out.println(stateResponseDTO.getRestResponse().getResult().getId());
+//        System.out.println(stateResponseDTO.getRestResponse().getMessages());
+////        System.out.println(responseBody.RestResponse.result.get(0).id);
+////        Assert.assertEquals(responseBody.RestResponse.result.get(0).id, 82);
+//    }
+//
+//    @Test
+//    public void successGetAllResponse() {
+//
+//        Response response =
+//                given().
+//                        get("/IND/all");
+//        ResponseBody body = response.getBody();
+//        StateListResponseDTO responseBody = body.as(StateListResponseDTO.class);
+//        System.out.println(responseBody.getRestResponse().getMessages());
+//        System.out.println(response.getStatusCode());
+////        Assert.assertEquals(responseBody.RestResponse.result.get(0).id, 65);
+//        List<String> messageSuccess = new ArrayList<String>();
+//        messageSuccess.add("Total [36] records found.");
+//        Assert.assertEquals(responseBody.getRestResponse().getMessages(), messageSuccess);
+//    }
+//
+//    @Test
+//    public void failureResponse() {
+//
+//        Response response =
+//                given().
+//                        get("/IND/al");
+//        ResponseBody body = response.getBody();
+//        StateResponseDTO responseBody = body.as(StateResponseDTO.class);
+//        System.out.println(responseBody.getRestResponse().getMessages());
+////        List<String> messageFailure = new ArrayList<String>();
+////
+////       messageFailure.add("No matching state found for requested code [IND->al].");
+//        String msg = "No matching state found for requested code [IND->al].";
+//
+//
+////        Assert.assertEquals(responseBody.RestResponse.messages.get(0), msg);
+//    }
+//
+//    @Test
+//    public void successResponseList() {
+//
+//        Response response =
+//                given().
+//                        get("/IND/all");
+//        ResponseBody body = response.getBody();
+//        StateListResponseDTO responseBody = body.as(StateListResponseDTO.class);
+//        System.out.println(responseBody.getRestResponse().getMessages());
+//
+//        List<String> messageSuccess = new ArrayList<String>();
+//        messageSuccess.add("Total [36] records found.");
+//        Assert.assertEquals(responseBody.getRestResponse().getMessages(), messageSuccess);
+//
+//
+//    }
 
 
 }

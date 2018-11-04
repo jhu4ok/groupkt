@@ -6,10 +6,8 @@ import dto.StateResponseDTO;
 
 import io.restassured.response.Response;
 
+import org.apache.logging.log4j.*;
 
-import lombok.extern.slf4j.Slf4j;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -17,7 +15,10 @@ import steps.Steps;
 import transfer.RestRequestTransfer;
 
 
+
 public class GetResponseStateObjectValidate {
+
+    private static Logger log = LogManager.getLogger(GetResponseStateObjectValidate.class.getName());
 
 
     GetResponseAssertions getResponseAssertions = new GetResponseAssertions();
@@ -27,6 +28,7 @@ public class GetResponseStateObjectValidate {
     public void setUp() {
 
         RestRequestTransfer.initialiseBaseURI();
+        log.info("Host information" + RestRequestTransfer.initialiseBaseURI());
     }
 
 
@@ -34,6 +36,7 @@ public class GetResponseStateObjectValidate {
     public void successGetOneStateResponse() {
 
         Response getResponse = steps.sendGetRequest("/get/USA/AK");
+        log.info(getResponse);
         StateResponseDTO stateResponseDTO = steps.convertResponseToStateObject(getResponse);
 
         getResponseAssertions.assertStatusCode(getResponse, 200);

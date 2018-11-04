@@ -9,7 +9,7 @@ import org.testng.Assert;
 import java.util.Arrays;
 import java.util.List;
 
-@Slf4j
+
 public class GetResponseAssertions {
 
 
@@ -23,7 +23,6 @@ public class GetResponseAssertions {
 
 
     public void assertResponseContainsListOfAllCountries(int expectedCount, StateListResponseDTO resultResponse) {
-
         Assert.assertEquals(expectedCount, resultResponse.getRestResponse().getResult().size(), "Incorrect States Count");
     }
 
