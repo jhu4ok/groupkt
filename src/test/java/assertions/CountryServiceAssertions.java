@@ -1,8 +1,10 @@
 package assertions;
 
+import com.sun.tools.xjc.generator.bean.field.Messages;
 import dto.CountriesListResponseDTO;
 import dto.CountryResponseDTO;
 import org.testng.Assert;
+
 
 
 import java.util.Arrays;
@@ -13,6 +15,7 @@ public class CountryServiceAssertions extends MainAssertions {
     String name = "Ukraine";
     String alpha2_code = "UA";
     String alpha3_code = "UKR";
+
 
     public void assertResponseMessageForCountriesList(String expMsg, CountriesListResponseDTO resultResponse, String value) {
         List<String> expectedMessage;
@@ -25,6 +28,7 @@ public class CountryServiceAssertions extends MainAssertions {
         }
 
         Assert.assertEquals(expectedMessage, resultResponse.getRestResponse().getMessages(), "Incorrect States List Response Message");
+
     }
 
     public void assertResponseContainsListOfAllCountries(int expectedCount, CountriesListResponseDTO resultResponse) {

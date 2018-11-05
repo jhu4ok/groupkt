@@ -3,13 +3,11 @@ package assertions;
 import dto.StateListResponseDTO;
 import dto.StateResponseDTO;
 
-import io.restassured.response.Response;
 import org.testng.Assert;
+import util.PropertiesUtil;
 
 
 import java.util.Arrays;
-import java.util.Collection;
-import java.util.HashMap;
 import java.util.List;
 
 public class StateServiceAssertions extends MainAssertions {
@@ -24,8 +22,8 @@ public class StateServiceAssertions extends MainAssertions {
     String capital = "Juneau";
 
 
-    public void assertResponseContainsListOfAllStates(int expectedCount, StateListResponseDTO resultResponse) {
-        Assert.assertEquals(expectedCount, resultResponse.getRestResponse().getResult().size(), "Incorrect States Count");
+    public void assertResponseContainsListOfAllStates(String expectedCount, StateListResponseDTO resultResponse) {
+        Assert.assertEquals(Integer.parseInt(PropertiesUtil.getProp(expectedCount)), resultResponse.getRestResponse().getResult().size(), "Incorrect States Count");
     }
 
     public void assertResponseContainsCorrectStateInfo(StateResponseDTO stateResponseDTO) {
@@ -46,8 +44,9 @@ public class StateServiceAssertions extends MainAssertions {
         if (resultResponse.getRestResponse().getResult().size() > 0) {
             expectedMessage = Arrays.asList(expMsg + resultResponse.getRestResponse().getResult().size() + "] records found.");
         } else {
-            String[] uriReq = resourseURL.split("/");
-            expectedMessage = Arrays.asList(expMsg + uriReq[2] + "->" + value + "].");
+            String[] uriReq = PropertiesUtil.getProp(resourseURL).split("/");
+            expMsg = PropertiesUtil.getProp(expMsg).replaceAll("/*", uriReq[2]);
+            expectedMessage = Arrays.asList(expMsg);
         }
 
         Assert.assertEquals(expectedMessage, resultResponse.getRestResponse().getMessages(), "Incorrect States List Response Message");
@@ -63,21 +62,20 @@ public class StateServiceAssertions extends MainAssertions {
 
         } else {
 
-            String[] uriReq = resourseURL.split("/");
+            String[] uriReq = PropertiesUtil.getProp(resourseURL).split("/");
             expectedMessage = Arrays.asList(expMess + uriReq[2] + "->" + uriReq[3] + "].");
         }
-
         Assert.assertEquals(expectedMessage, stateResponseDTO.getRestResponse().getMessages(), "Incorrect States List Response Message");
     }
 
-public void assertResponseContainsCorrectInfo(StateListResponseDTO resultResponse, String state){
-   resultResponse.getRestResponse().getResult().stream().count();
+    public void assertResponseContainsCorrectInfo(StateListResponseDTO resultResponse, String state) {
+        resultResponse.getRestResponse().getResult().stream().count();
 //            allMatch((country -> state.equals(resultResponse.getRestResponse().getResult()))));
 //    Collection<HashMap<String, ?>> resultMap =  resp.path("RestResponse.result");
 //    Assert.assertTrue(!resultResponse.getRestResponse().getResult().stream().
 //            allMatch(s -> s.getRestResponse().getResult().toString().isEmpty()));
 
 //    Assert.assertTrue(!resultMap.stream().allMatch(s -> s.get(“location”).toString().isEmpty()));
-}
+    }
 
 }

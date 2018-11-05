@@ -29,8 +29,9 @@ public class CountryObjectValidate {
     @Test
     public void successGetAllCountriesList() {
 
-        Response getResponse = step.sendGetRequest("/get/all");
+        Response getResponse = step.sendGetRequest("ALL_STATES_RESOURCE");
         CountriesListResponseDTO countriesListResponseDTO = step.convertResponseToCountriesListObject(getResponse);
+
 
         assertion.assertStatusCode(getResponse, 200);
         assertion.assertResponseMessageForCountriesList(expectedMessageSuccessForList, countriesListResponseDTO, "");
@@ -74,6 +75,7 @@ public class CountryObjectValidate {
     public void getNothingMatchingFoundByThreeCharISO() {
         Response getResponse = step.sendGetRequest("/get/iso3code/UKJ");
         CountryResponseDTO countryResponseDTO = step.convertResponseToCountryObject(getResponse);
+
 
         assertion.assertStatusCode(getResponse, 200);
         assertion.assertResponseMessageForCountry(expectedMessageNothing, countryResponseDTO, "/get/iso3code/UKJ");

@@ -16,7 +16,7 @@ public class StateObjectValidate {
 
     StateServiceAssertions assertion = new StateServiceAssertions();
     StepsForStateService step = new StepsForStateService();
-    String expectedMessageSuccess = "State found matching code [";
+    String expectedMessageSuccess = "State found matching code [*].";
     String expectedMessageSuccessList = "Total [";
     String expectedMessageNothing = "No matching state found for requested code [";
 
@@ -31,22 +31,22 @@ public class StateObjectValidate {
     @Test
     public void successGetAllStatesResponse() {
 
-        Response getResponse = step.sendGetRequest("/get/USA/all");
+        Response getResponse = step.sendGetRequest("ALL_STATES_RESOURCE");
         StateListResponseDTO stateListResponseDTO = step.convertResponseToStatesListObject(getResponse);
 
         assertion.assertStatusCode(getResponse, 200);
         assertion.assertResponseMessageForStatesList(expectedMessageSuccessList, stateListResponseDTO, "", "");
-        assertion.assertResponseContainsListOfAllStates(55, stateListResponseDTO);
+        assertion.assertResponseContainsListOfAllStates("USA_STATES_COUNT", stateListResponseDTO);
     }
 
     @Test
     public void successGetOneStateResponse() {
 
-        Response getResponse = step.sendGetRequest("/get/USA/AK");
+        Response getResponse = step.sendGetRequest("ONE_STATE_RESOURCE");
         StateResponseDTO stateResponseDTO = step.convertResponseToStateObject(getResponse);
 
         assertion.assertStatusCode(getResponse, 200);
-        assertion.assertResponseMessageForState(expectedMessageSuccess, stateResponseDTO, "/get/USA/AK");
+        assertion.assertResponseMessageForState("MessageSuccess", stateResponseDTO, "ONE_STATE_RESOURCE");
         assertion.assertResponseContainsCorrectStateInfo(stateResponseDTO);
     }
 
@@ -54,11 +54,11 @@ public class StateObjectValidate {
     @Test
     public void getNothingMatchingFound() {
 
-        Response getResponse = step.sendGetRequest("/get/USA/al");
+        Response getResponse = step.sendGetRequest("INVALID_STATE_RESOURCE");
         StateResponseDTO stateResponseDTO = step.convertResponseToStateObject(getResponse);
 
         assertion.assertStatusCode(getResponse, 200);
-        assertion.assertResponseMessageForState(expectedMessageNothing, stateResponseDTO, "/get/USA/al");
+        assertion.assertResponseMessageForState(expectedMessageNothing, stateResponseDTO, "INVALID_STATE_RESOURCE");
 
     }
 
@@ -66,12 +66,12 @@ public class StateObjectValidate {
     @Test
     public void getStateByAnyFreeFormText() {
 
-        Response getResponse = step.sendGetWithText("text", "wa", "/search/USA");
+        Response getResponse = step.sendGetWithText("KEY_TEXT", "TEXT", "SEARCH_STATE_RESOURCE");
         StateListResponseDTO stateListResponseDTO = step.convertResponseToStatesListObject(getResponse);
 
         assertion.assertStatusCode(getResponse, 200);
         assertion.assertResponseMessageForStatesList(expectedMessageSuccessList, stateListResponseDTO, "", "");
-        assertion.assertResponseContainsListOfAllStates(4, stateListResponseDTO);
+        assertion.assertResponseContainsListOfAllStates("COUNT_WA_STATES", stateListResponseDTO);
 
     }
 
@@ -79,26 +79,13 @@ public class StateObjectValidate {
     @Test
     public void getNothingStateByAnyFreeFormText() {
 
-        Response getResponse = step.sendGetWithText("text", "wj", "/search/USA");
+        Response getResponse = step.sendGetWithText("KEY_TEXT", "INVALID_TEXT", "SEARCH_STATE_RESOURCE");
         StateListResponseDTO stateListResponseDTO = step.convertResponseToStatesListObject(getResponse);
 
         assertion.assertStatusCode(getResponse, 200);
-        assertion.assertResponseMessageForStatesList(expectedMessageNothing, stateListResponseDTO, "/search/USA", "wj");
-        assertion.assertResponseContainsListOfAllStates(0, stateListResponseDTO);
+        assertion.assertResponseMessageForStatesList(expectedMessageNothing,
+                stateListResponseDTO, "SEARCH_STATE_RESOURCE", "INVALID_TEXT");
+        assertion.assertResponseContainsListOfAllStates("NOTHING", stateListResponseDTO);
 
     }
-
-    @Test
-    public void test() {
-
-        Response getResponse = step.sendGetRequest("/get/USA/all");
-        StateListResponseDTO stateListResponseDTO = step.convertResponseToStatesListObject(getResponse);
-
-        assertion.assertStatusCode(getResponse, 200);
-        assertion.assertResponseContainsCorrectInfo(stateListResponseDTO, "USA");
-
-    }
-
-
-
 }

@@ -9,19 +9,19 @@ public class MainSteps {
     protected RestRequestTransfer restRequestTransfer = new RestRequestTransfer();
 
     public static String initialiseBaseURI(String propertyName) {
-        RestAssured.baseURI = PropertiesUtil.getURL(propertyName);
+        RestAssured.baseURI = PropertiesUtil.getProp(propertyName);
         return RestAssured.baseURI;
     }
 
-    public Response sendGetRequest(String stateResource) {
+    public Response sendGetRequest(String resourceName) {
 
-        Response response = restRequestTransfer.getRequest(stateResource);
+        Response response = restRequestTransfer.getRequest(PropertiesUtil.getProp(resourceName));
         return response;
     }
 
     public Response sendGetWithText(String key, String value, String url) {
 
-        Response response = restRequestTransfer.getRequestUsingText(key, value, url);
+        Response response = restRequestTransfer.getRequestUsingText(PropertiesUtil.getProp(key), PropertiesUtil.getProp(value), PropertiesUtil.getProp(url));
         return response;
     }
 

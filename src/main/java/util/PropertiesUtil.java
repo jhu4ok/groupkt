@@ -8,7 +8,7 @@ import java.io.FileNotFoundException;
 public class PropertiesUtil {
 
 
-    public static String getURL(String propertyName) {
+    public static String getProp(String propertyName) {
 
         Properties prop = new Properties();
 
