@@ -1,6 +1,5 @@
 package dto;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -9,7 +8,7 @@ import java.util.List;
 
 @Getter
 @Setter
-public class StateResponseDTO {
+public class StateResponseDTO  {
 
     private StateResponseDTO RestResponse;
     private List<String> messages;

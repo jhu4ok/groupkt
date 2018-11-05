@@ -1,3 +1,8 @@
-C:\Users\Anhelina_Zhukova\Desktop\TestingFramework\src\test\java\scenarios\GetResponseStateObjectValidate.java
-C:\Users\Anhelina_Zhukova\Desktop\TestingFramework\src\test\java\assertions\GetResponseAssertions.java
-C:\Users\Anhelina_Zhukova\Desktop\TestingFramework\src\test\java\steps\Steps.java
+C:\Users\Anhelina_Zhukova\Desktop\TestingFramework\src\test\java\assertions\MainAssertions.java
+C:\Users\Anhelina_Zhukova\Desktop\TestingFramework\src\test\java\steps\MainSteps.java
+C:\Users\Anhelina_Zhukova\Desktop\TestingFramework\src\test\java\assertions\StateServiceAssertions.java
+C:\Users\Anhelina_Zhukova\Desktop\TestingFramework\src\test\java\scenarios\CountryObjectValidate.java
+C:\Users\Anhelina_Zhukova\Desktop\TestingFramework\src\test\java\assertions\CountryServiceAssertions.java
+C:\Users\Anhelina_Zhukova\Desktop\TestingFramework\src\test\java\scenarios\StateObjectValidate.java
+C:\Users\Anhelina_Zhukova\Desktop\TestingFramework\src\test\java\steps\StepsForCountryService.java
+C:\Users\Anhelina_Zhukova\Desktop\TestingFramework\src\test\java\steps\StepsForStateService.java

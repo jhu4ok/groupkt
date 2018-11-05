@@ -7,6 +7,7 @@ import java.util.List;
 
 @Getter @Setter
 public class StateListResponseDTO {
+
     private StateListResponseDTO RestResponse;
     private List<String> messages;
     private List<StateListResponseDTO> result;
