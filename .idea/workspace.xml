@@ -2,25 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b3950c4-b565-4cd0-baff-3e73d1d948d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/ResponseMessages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/logs.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/logs.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/logs.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/StateListResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/StateListResponseDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/util/PropertiesUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/PropertiesUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/ReportUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/ReportUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/ReportUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/ResponseMessages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/UrlConverter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/env.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/env.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/assertions/CountryServiceAssertions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/assertions/CountryServiceAssertions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/assertions/StateServiceAssertions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/assertions/StateServiceAssertions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/scenarios/CountryObjectValidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/scenarios/CountryObjectValidate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/scenarios/StateObjectValidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/scenarios/StateObjectValidate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/MainSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/MainSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Report.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dto/StateListResponseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dto/StateListResponseDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/env.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/env.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/util/PropertiesUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/PropertiesUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/ReportUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/ReportUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/ResponseMessages.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Automation Test/Smoke Test.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Automation Test/Smoke Test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Automation Test/Smoke Test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Automation Test/Smoke Test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-scenarios.CountryObjectValidate.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-scenarios.CountryObjectValidate.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-scenarios.StateObjectValidate.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-scenarios.StateObjectValidate.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Automation Test/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Automation Test/classes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Automation Test/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Automation Test/methods-alphabetical.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Automation Test/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Automation Test/methods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Automation Test/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Automation Test/toc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/assertions/CountryServiceAssertions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/assertions/CountryServiceAssertions.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/assertions/StateServiceAssertions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/assertions/StateServiceAssertions.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/scenarios/CountryObjectValidate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/scenarios/CountryObjectValidate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/scenarios/StateObjectValidate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/scenarios/StateObjectValidate.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,31 +72,33 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="173" />
-          <entry key="java" value="7588" />
+          <entry key="java" value="8484" />
           <entry key="json" value="1" />
-          <entry key="properties" value="283" />
-          <entry key="xml" value="168" />
+          <entry key="log" value="1" />
+          <entry key="properties" value="508" />
+          <entry key="xml" value="171" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7588" />
+          <entry key="JAVA" value="8484" />
           <entry key="JSON" value="1" />
+          <entry key="Log" value="1" />
           <entry key="PLAIN_TEXT" value="173" />
-          <entry key="Properties" value="283" />
-          <entry key="XML" value="168" />
+          <entry key="Properties" value="508" />
+          <entry key="XML" value="171" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="41" />
           <entry key="html" value="2" />
-          <entry key="java" value="124" />
+          <entry key="java" value="168" />
           <entry key="json" value="1" />
-          <entry key="log" value="20" />
+          <entry key="log" value="25" />
           <entry key="png" value="2" />
-          <entry key="properties" value="15" />
-          <entry key="xml" value="9" />
+          <entry key="properties" value="20" />
+          <entry key="xml" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -82,12 +106,12 @@
           <entry key="CLASS" value="41" />
           <entry key="HTML" value="2" />
           <entry key="Image" value="2" />
-          <entry key="JAVA" value="124" />
+          <entry key="JAVA" value="168" />
           <entry key="JSON" value="1" />
-          <entry key="Log" value="12" />
+          <entry key="Log" value="17" />
           <entry key="PLAIN_TEXT" value="8" />
-          <entry key="Properties" value="15" />
-          <entry key="XML" value="9" />
+          <entry key="Properties" value="20" />
+          <entry key="XML" value="11" />
         </counts>
       </usages-collector>
     </session>
@@ -137,23 +161,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/CountryObjectValidate.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="64" column="44" lean-forward="true" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="136">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/StateObjectValidate.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/CountryObjectValidate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="42" column="19" lean-forward="true" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+            <state relative-caret-position="-1141">
+              <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/logs/logs1.log">
+          <provider selected="true" editor-type-id="LogFileEditorProvider" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/util/UrlConverter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/steps/StepsForCountryService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -164,8 +208,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/steps/MainSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+            <state relative-caret-position="412">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -174,72 +218,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/assertions/CountryServiceAssertions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logs/logs.log">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/assertions/StateServiceAssertions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="47" column="50" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/env.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/util/PropertiesUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+        <entry file="file://$PROJECT_DIR$/src/test/java/steps/StepsForStateService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="68" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/util/ReportUtil.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/StateObjectValidate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -261,12 +264,19 @@
       <find>slf4j-api</find>
       <find>sco</find>
       <find>simple</find>
-      <find>testng</find>
       <find>log4j-application.log</find>
       <find>logger</find>
       <find>log</find>
       <find>&lt;profiles&gt;</find>
       <find>expectedMessageSuccess</find>
+      <find>expectedMessageNothingForList</find>
+      <find>ISO2CODE_RESOURCE</find>
+      <find>assertResponseMessageForCountry</find>
+      <find>split</find>
+      <find>assertResponseContainsCorrectCountryInfo</find>
+      <find>assertResponseContainsCorrectStateInfo</find>
+      <find>testng</find>
+      <find>error</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -282,8 +292,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/dto/StateDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dto/RestListDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/dto/RestResponseDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/util/FileUtil.java" />
         <option value="$PROJECT_DIR$/src/test/java/assertions/CountryAssertions.java" />
@@ -299,7 +307,6 @@
         <option value="$PROJECT_DIR$/src/main/java/dto/StateSuccessResponseDTO.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/test/java/assertions/GetResponseAssertions.java" />
         <option value="$PROJECT_DIR$/src/main/java/dto/CountriesListResponceDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/dto/GetResponseDTO.java" />
@@ -309,30 +316,33 @@
         <option value="$PROJECT_DIR$/src/test/java/steps/StepsForCountry.java" />
         <option value="$PROJECT_DIR$/src/main/java/dto/dto.java" />
         <option value="$PROJECT_DIR$/src/main/java/dto/CountryResponseDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dto/StateListResponseDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/dto/StateResponseDTO.java" />
-        <option value="$PROJECT_DIR$/src/test/java/assertions/MainAssertions.java" />
         <option value="$PROJECT_DIR$/src/test/java/assertions/GetResponseAssertionsForStateService.java" />
         <option value="$PROJECT_DIR$/src/test/java/scenarios/GetResponseStateObjectValidate.java" />
         <option value="$PROJECT_DIR$/src/test/java/assertions/GetResponseAssertionsForCountryService.java" />
         <option value="$PROJECT_DIR$/src/test/java/scenarios/GetResponseCountryObjectValidate.java" />
         <option value="$PROJECT_DIR$/src/test/java/steps/StepsForCountryService.java" />
         <option value="$PROJECT_DIR$/src/main/java/transfer/RestRequestTransfer.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/messages.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/Report.java" />
         <option value="$PROJECT_DIR$/src/main/java/dto/CountriesListResponseDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/Messages.java" />
-        <option value="$PROJECT_DIR$/src/main/java/util/ReportUtil.java" />
-        <option value="$PROJECT_DIR$/src/test/java/assertions/CountryServiceAssertions.java" />
-        <option value="$PROJECT_DIR$/src/test/java/scenarios/CountryObjectValidate.java" />
         <option value="$PROJECT_DIR$/logs/logs.log" />
-        <option value="$PROJECT_DIR$/src/test/java/steps/MainSteps.java" />
-        <option value="$PROJECT_DIR$/src/main/java/util/PropertiesUtil.java" />
         <option value="$PROJECT_DIR$/src/main/resources/env.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/scenarios/StateObjectValidate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/util/ReportUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/util/PropertiesUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/util/ResponseMessages.java" />
+        <option value="$PROJECT_DIR$/src/test/java/steps/MainSteps.java" />
+        <option value="$PROJECT_DIR$/src/main/java/util/UrlConverter.java" />
         <option value="$PROJECT_DIR$/src/test/java/assertions/StateServiceAssertions.java" />
+        <option value="$PROJECT_DIR$/src/test/java/assertions/CountryServiceAssertions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dto/StateListResponseDTO.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/assertions/MainAssertions.java" />
+        <option value="$PROJECT_DIR$/src/test/java/scenarios/StateObjectValidate.java" />
+        <option value="$PROJECT_DIR$/src/test/java/scenarios/CountryObjectValidate.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
       </list>
     </option>
   </component>
@@ -342,6 +352,12 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="815" />
@@ -356,108 +372,92 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="groupkt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="groupkt" type="462c0819:PsiDirectoryNode" />
+              <item name="TestingFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestingFramework" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="groupkt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="groupkt" type="462c0819:PsiDirectoryNode" />
+              <item name="TestingFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestingFramework" type="462c0819:PsiDirectoryNode" />
               <item name="logs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="groupkt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="groupkt" type="462c0819:PsiDirectoryNode" />
+              <item name="TestingFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestingFramework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="groupkt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="groupkt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="groupkt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="groupkt" type="462c0819:PsiDirectoryNode" />
+              <item name="TestingFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestingFramework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="groupkt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="groupkt" type="462c0819:PsiDirectoryNode" />
+              <item name="TestingFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestingFramework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="groupkt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="groupkt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="transfer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="groupkt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="groupkt" type="462c0819:PsiDirectoryNode" />
+              <item name="TestingFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestingFramework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="groupkt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="groupkt" type="462c0819:PsiDirectoryNode" />
+              <item name="TestingFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestingFramework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="groupkt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="groupkt" type="462c0819:PsiDirectoryNode" />
+              <item name="TestingFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestingFramework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="groupkt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="groupkt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="groupkt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="groupkt" type="462c0819:PsiDirectoryNode" />
+              <item name="TestingFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestingFramework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="assertions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="groupkt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="groupkt" type="462c0819:PsiDirectoryNode" />
+              <item name="TestingFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestingFramework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="scenarios" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="TestingFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestingFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="steps" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541451466077" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541504873627" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -485,7 +485,41 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.StateObjectValidate.successGetOneStateResponse">
+  <component name="RunManager" selected="TestNG.StateObjectValidate">
+    <configuration name="CountryObjectValidate" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestingFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="scenarios.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="scenarios" />
+      <option name="MAIN_CLASS_NAME" value="scenarios.CountryObjectValidate" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CountryObjectValidate.successGetAllCountriesList" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestingFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="scenarios.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="scenarios" />
+      <option name="MAIN_CLASS_NAME" value="scenarios.CountryObjectValidate" />
+      <option name="METHOD_NAME" value="successGetAllCountriesList" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StateObjectValidate" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestingFramework" />
       <extension name="coverage">
@@ -496,24 +530,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="scenarios" />
       <option name="MAIN_CLASS_NAME" value="scenarios.StateObjectValidate" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StateObjectValidate.getNothingMatchingFound" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TestingFramework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="scenarios.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="scenarios" />
-      <option name="MAIN_CLASS_NAME" value="scenarios.StateObjectValidate" />
-      <option name="METHOD_NAME" value="getNothingMatchingFound" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -538,7 +554,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StateObjectValidate.successGetAllStatesResponse" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="scenarios" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestingFramework" />
       <extension name="coverage">
         <pattern>
@@ -547,27 +563,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="scenarios" />
-      <option name="MAIN_CLASS_NAME" value="scenarios.StateObjectValidate" />
-      <option name="METHOD_NAME" value="successGetAllStatesResponse" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StateObjectValidate.successGetOneStateResponse" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TestingFramework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="scenarios.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="scenarios" />
-      <option name="MAIN_CLASS_NAME" value="scenarios.StateObjectValidate" />
-      <option name="METHOD_NAME" value="successGetOneStateResponse" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
       <properties />
       <listeners />
       <method v="2">
@@ -575,19 +571,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.StateObjectValidate.successGetOneStateResponse" />
-      <item itemvalue="TestNG.StateObjectValidate.getNothingMatchingFound" />
-      <item itemvalue="TestNG.StateObjectValidate.getNothingStateByAnyFreeFormText" />
+      <item itemvalue="TestNG.CountryObjectValidate" />
+      <item itemvalue="TestNG.scenarios" />
       <item itemvalue="TestNG.StateObjectValidate" />
-      <item itemvalue="TestNG.StateObjectValidate.successGetAllStatesResponse" />
+      <item itemvalue="TestNG.CountryObjectValidate.successGetAllCountriesList" />
+      <item itemvalue="TestNG.StateObjectValidate.getNothingStateByAnyFreeFormText" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.StateObjectValidate.successGetOneStateResponse" />
-        <item itemvalue="TestNG.StateObjectValidate.successGetAllStatesResponse" />
         <item itemvalue="TestNG.StateObjectValidate" />
         <item itemvalue="TestNG.StateObjectValidate.getNothingStateByAnyFreeFormText" />
-        <item itemvalue="TestNG.StateObjectValidate.getNothingMatchingFound" />
+        <item itemvalue="TestNG.CountryObjectValidate" />
+        <item itemvalue="TestNG.CountryObjectValidate.successGetAllCountriesList" />
+        <item itemvalue="TestNG.scenarios" />
       </list>
     </recent_temporary>
   </component>
@@ -605,43 +601,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StateObjectValidate_successGetOneStateResponse - 2018.11.05 at 22h 23m 07s.xml">
-      <configuration name="StateObjectValidate.successGetOneStateResponse" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="StateObjectValidate_getStateByAnyFreeFormText - 2018.11.05 at 22h 32m 06s.xml">
-      <configuration name="StateObjectValidate.getStateByAnyFreeFormText" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="StateObjectValidate_successGetOneStateResponse - 2018.11.05 at 22h 39m 20s.xml">
-      <configuration name="StateObjectValidate.successGetOneStateResponse" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="StateObjectValidate_getNothingMatchingFound - 2018.11.05 at 22h 42m 27s.xml">
-      <configuration name="StateObjectValidate.getNothingMatchingFound" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="StateObjectValidate_getNothingMatchingFound - 2018.11.05 at 22h 43m 40s.xml">
-      <configuration name="StateObjectValidate.getNothingMatchingFound" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="StateObjectValidate_getNothingStateByAnyFreeFormText - 2018.11.05 at 22h 44m 27s.xml">
+    <history-entry file="StateObjectValidate_getNothingStateByAnyFreeFormText - 2018.11.06 at 13h 31m 53s.xml">
       <configuration name="StateObjectValidate.getNothingStateByAnyFreeFormText" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="StateObjectValidate - 2018.11.05 at 22h 46m 07s.xml">
+    <history-entry file="StateObjectValidate - 2018.11.06 at 13h 38m 29s.xml">
       <configuration name="StateObjectValidate" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="StateObjectValidate - 2018.11.05 at 22h 48m 43s.xml">
+    <history-entry file="StateObjectValidate - 2018.11.06 at 13h 38m 57s.xml">
       <configuration name="StateObjectValidate" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="StateObjectValidate_successGetAllStatesResponse - 2018.11.05 at 22h 53m 26s.xml">
-      <configuration name="StateObjectValidate.successGetAllStatesResponse" configurationId="TestNG" />
+    <history-entry file="StateObjectValidate - 2018.11.06 at 13h 39m 29s.xml">
+      <configuration name="StateObjectValidate" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="StateObjectValidate_successGetOneStateResponse - 2018.11.05 at 22h 54m 07s.xml">
-      <configuration name="StateObjectValidate.successGetOneStateResponse" configurationId="TestNG" />
+    <history-entry file="StateObjectValidate_getNothingStateByAnyFreeFormText - 2018.11.06 at 13h 39m 45s.xml">
+      <configuration name="StateObjectValidate.getNothingStateByAnyFreeFormText" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="StateObjectValidate_getNothingStateByAnyFreeFormText - 2018.11.06 at 13h 39m 58s.xml">
+      <configuration name="StateObjectValidate.getNothingStateByAnyFreeFormText" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="StateObjectValidate_getNothingStateByAnyFreeFormText - 2018.11.06 at 13h 40m 33s.xml">
+      <configuration name="StateObjectValidate.getNothingStateByAnyFreeFormText" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="StateObjectValidate_getNothingStateByAnyFreeFormText - 2018.11.06 at 13h 42m 51s.xml">
+      <configuration name="StateObjectValidate.getNothingStateByAnyFreeFormText" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="StateObjectValidate_getNothingStateByAnyFreeFormText - 2018.11.06 at 13h 43m 21s.xml">
+      <configuration name="StateObjectValidate.getNothingStateByAnyFreeFormText" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="StateObjectValidate - 2018.11.06 at 13h 45m 59s.xml">
+      <configuration name="StateObjectValidate" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7071583" visible="true" weight="0.21275167" />
-      <window_info id="Structure" order="1" sideWeight="0.29284164" side_tool="true" visible="true" weight="0.21275167" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7083333" visible="true" weight="0.21215352" />
+      <window_info id="Structure" order="1" sideWeight="0.29166666" side_tool="true" visible="true" weight="0.21215352" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -649,15 +644,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3240469" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.398827" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32321042" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39804772" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.33870968" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3383948" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
       <window_info anchor="right" id="Palette" order="2" />
@@ -665,8 +660,8 @@
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="right" id="Ant Build" order="6" sideWeight="0.49917898" weight="0.32995737" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info anchor="right" id="Coverage" order="8" sideWeight="0.500821" side_tool="true" visible="true" weight="0.020788912" />
+      <window_info anchor="right" id="Coverage" order="7" sideWeight="0.500821" side_tool="true" visible="true" weight="0.020788912" />
+      <window_info anchor="right" id="Maven Projects" order="8" visible="true" weight="0.07196162" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -680,7 +675,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/transfer/StateDTOConverter.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/dto/FailureRestResponseDTO.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/dto/StateDTO.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/util/JsonParserUtil.java" />
@@ -704,33 +698,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/dto/StateSuccessResponseDTO.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/dto/GetResponseDTO.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/dto/dto.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/StepsForStateService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/StepsForCountryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testng.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -757,33 +724,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/messages.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dto/CountryResponseDTO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/messages.properties" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/assertions/CountryServiceAssertions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        <state relative-caret-position="181">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dto/StateListResponseDTO.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/assertions/StateServiceAssertions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        <state relative-caret-position="799">
+          <caret line="47" column="68" selection-start-line="47" selection-start-column="68" selection-end-line="47" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dto/StateResponseDTO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/transfer/RestRequestTransfer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        <state relative-caret-position="255">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -800,56 +765,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/transfer/RestRequestTransfer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dto/CountryResponseDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="204">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/assertions/MainAssertions.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dto/StateListResponseDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+        <state relative-caret-position="153">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/ResponseMessages.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dto/StateResponseDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="221">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
           <folding>
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#414#415#0" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
-            <element signature="e#541#542#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/util/ReportUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/logs.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/MainSteps.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/assertions/MainAssertions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        <state relative-caret-position="187">
+          <caret line="11" column="88" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="88" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -858,35 +814,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/util/PropertiesUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/assertions/CountryServiceAssertions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="68" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/CountryObjectValidate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="64" column="44" lean-forward="true" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
+        <state relative-caret-position="255">
+          <caret line="15" column="79" selection-start-line="15" selection-start-column="79" selection-end-line="15" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -895,15 +824,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/env.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="14" />
+        <state relative-caret-position="340">
+          <caret line="20" column="59" lean-forward="true" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/assertions/StateServiceAssertions.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/UrlConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="47" column="50" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
+        <state relative-caret-position="68">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/StepsForCountryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/MainSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -912,11 +858,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/StateObjectValidate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="42" column="19" lean-forward="true" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/StepsForStateService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/logs.log">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="174">
+          <caret line="2396" column="56" selection-start-line="2396" selection-start-column="56" selection-end-line="2396" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/scenarios/CountryObjectValidate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1141">
+          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/logs1.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>

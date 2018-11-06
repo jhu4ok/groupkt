@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Automation Test]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="util.ReportUtil"/>
+  </listeners>
+  <test thread-count="5" name="Smoke Test(failed)" verbose="0">
+    <classes>
+      <class name="scenarios.CountryObjectValidate">
+        <methods>
+          <include name="successGetAllCountriesList"/>
+          <include name="getNothingMatchingFoundByAnyFreeFormText"/>
+          <include name="getNothingMatchingFoundByThreeCharISO"/>
+          <include name="setUp"/>
+          <include name="getCountriesByAnyFreeFormText"/>
+          <include name="getCountryByThreeCharISO"/>
+          <include name="getNothingMatchingFoundByTwoCharISO"/>
+          <include name="getCountryByTwoCharISO"/>
+        </methods>
+      </class> <!-- scenarios.CountryObjectValidate -->
+      <class name="scenarios.StateObjectValidate">
+        <methods>
+          <include name="successGetOneStateResponse"/>
+          <include name="setUp"/>
+          <include name="getNothingStateByAnyFreeFormText"/>
+        </methods>
+      </class> <!-- scenarios.StateObjectValidate -->
+    </classes>
+  </test> <!-- Smoke Test(failed) -->
+</suite> <!-- Failed suite [Automation Test] -->

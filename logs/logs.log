@@ -1,0 +1,801 @@
+2018-11-06 13:47:32 DEBUG BasicClientConnectionManager:161 - Get connection for route {}->http://services.groupkt.com:80
+2018-11-06 13:47:32 DEBUG DefaultClientConnectionOperator:177 - Connecting to services.groupkt.com:80
+2018-11-06 13:47:32 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2018-11-06 13:47:32 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2018-11-06 13:47:32 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2018-11-06 13:47:32 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2018-11-06 13:47:32 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2018-11-06 13:47:32 DEBUG DefaultClientConnection:274 - Sending request: GET /state/get/USA/al HTTP/1.1
+2018-11-06 13:47:32 DEBUG wire:73 -  >> "GET /state/get/USA/al HTTP/1.1[\r][\n]"
+2018-11-06 13:47:32 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2018-11-06 13:47:32 DEBUG wire:73 -  >> "Host: services.groupkt.com[\r][\n]"
+2018-11-06 13:47:32 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2018-11-06 13:47:32 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.1)[\r][\n]"
+2018-11-06 13:47:32 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2018-11-06 13:47:32 DEBUG wire:73 -  >> "[\r][\n]"
+2018-11-06 13:47:32 DEBUG headers:278 - >> GET /state/get/USA/al HTTP/1.1
+2018-11-06 13:47:32 DEBUG headers:281 - >> Accept: */*
+2018-11-06 13:47:32 DEBUG headers:281 - >> Host: services.groupkt.com
+2018-11-06 13:47:32 DEBUG headers:281 - >> Connection: Keep-Alive
+2018-11-06 13:47:32 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.1)
+2018-11-06 13:47:32 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2018-11-06 13:47:32 DEBUG wire:73 -  << "HTTP/1.1 200 200[\r][\n]"
+2018-11-06 13:47:32 DEBUG wire:73 -  << "Date: Tue, 06 Nov 2018 11:47:32 GMT[\r][\n]"
+2018-11-06 13:47:32 DEBUG wire:73 -  << "Server: Apache/2.4.25 (Debian)[\r][\n]"
+2018-11-06 13:47:32 DEBUG wire:73 -  << "X-Content-Type-Options: nosniff[\r][\n]"
+2018-11-06 13:47:32 DEBUG wire:73 -  << "X-XSS-Protection: 1; mode=block[\r][\n]"
+2018-11-06 13:47:32 DEBUG wire:73 -  << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+2018-11-06 13:47:32 DEBUG wire:73 -  << "Pragma: no-cache[\r][\n]"
+2018-11-06 13:47:32 DEBUG wire:73 -  << "Expires: 0[\r][\n]"
+2018-11-06 13:47:32 DEBUG wire:73 -  << "X-Frame-Options: DENY[\r][\n]"
+2018-11-06 13:47:32 DEBUG wire:73 -  << "Keep-Alive: timeout=5, max=100[\r][\n]"
+2018-11-06 13:47:32 DEBUG wire:73 -  << "Connection: Keep-Alive[\r][\n]"
+2018-11-06 13:47:32 DEBUG wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2018-11-06 13:47:32 DEBUG wire:73 -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+2018-11-06 13:47:32 DEBUG wire:73 -  << "[\r][\n]"
+2018-11-06 13:47:32 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 200
+2018-11-06 13:47:32 DEBUG headers:262 - << HTTP/1.1 200 200
+2018-11-06 13:47:32 DEBUG headers:265 - << Date: Tue, 06 Nov 2018 11:47:32 GMT
+2018-11-06 13:47:32 DEBUG headers:265 - << Server: Apache/2.4.25 (Debian)
+2018-11-06 13:47:32 DEBUG headers:265 - << X-Content-Type-Options: nosniff
+2018-11-06 13:47:32 DEBUG headers:265 - << X-XSS-Protection: 1; mode=block
+2018-11-06 13:47:32 DEBUG headers:265 - << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2018-11-06 13:47:32 DEBUG headers:265 - << Pragma: no-cache
+2018-11-06 13:47:32 DEBUG headers:265 - << Expires: 0
+2018-11-06 13:47:32 DEBUG headers:265 - << X-Frame-Options: DENY
+2018-11-06 13:47:32 DEBUG headers:265 - << Keep-Alive: timeout=5, max=100
+2018-11-06 13:47:32 DEBUG headers:265 - << Connection: Keep-Alive
+2018-11-06 13:47:32 DEBUG headers:265 - << Transfer-Encoding: chunked
+2018-11-06 13:47:32 DEBUG headers:265 - << Content-Type: application/json;charset=UTF-8
+2018-11-06 13:47:32 DEBUG DefaultHttpClient:509 - Connection can be kept alive for 5000 MILLISECONDS
+2018-11-06 13:47:32 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json;charset=UTF-8
+2018-11-06 13:47:32 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2018-11-06 13:47:32 DEBUG wire:73 -  << "69[\r][\n]"
+2018-11-06 13:47:32 DEBUG wire:73 -  << "{[\n]"
+2018-11-06 13:47:32 DEBUG wire:73 -  << "  "RestResponse" : {[\n]"
+2018-11-06 13:47:32 DEBUG wire:73 -  << "    "messages" : [ "No matching state found for requested code [USA->al]." ][\n]"
+2018-11-06 13:47:32 DEBUG wire:73 -  << "  }[\n]"
+2018-11-06 13:47:32 DEBUG wire:87 -  << "}"
+2018-11-06 13:47:32 DEBUG wire:73 -  << "[\r][\n]"
+2018-11-06 13:47:32 DEBUG wire:73 -  << "0[\r][\n]"
+2018-11-06 13:47:32 DEBUG wire:73 -  << "[\r][\n]"
+2018-11-06 13:47:32 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@e1e2e5e
+2018-11-06 13:47:32 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive for 5000 MILLISECONDS
+2018-11-06 13:47:32 DEBUG BasicClientConnectionManager:161 - Get connection for route {}->http://services.groupkt.com:80
+2018-11-06 13:47:32 DEBUG DefaultClientConnectionOperator:177 - Connecting to services.groupkt.com:80
+2018-11-06 13:47:33 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2018-11-06 13:47:33 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2018-11-06 13:47:33 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2018-11-06 13:47:33 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2018-11-06 13:47:33 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2018-11-06 13:47:33 DEBUG DefaultClientConnection:274 - Sending request: GET /state/search/USA?text=WJ HTTP/1.1
+2018-11-06 13:47:33 DEBUG wire:73 -  >> "GET /state/search/USA?text=WJ HTTP/1.1[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  >> "Host: services.groupkt.com[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.1)[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  >> "[\r][\n]"
+2018-11-06 13:47:33 DEBUG headers:278 - >> GET /state/search/USA?text=WJ HTTP/1.1
+2018-11-06 13:47:33 DEBUG headers:281 - >> Accept: */*
+2018-11-06 13:47:33 DEBUG headers:281 - >> Host: services.groupkt.com
+2018-11-06 13:47:33 DEBUG headers:281 - >> Connection: Keep-Alive
+2018-11-06 13:47:33 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.1)
+2018-11-06 13:47:33 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2018-11-06 13:47:33 DEBUG wire:73 -  << "HTTP/1.1 200 200[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "Date: Tue, 06 Nov 2018 11:47:33 GMT[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "Server: Apache/2.4.25 (Debian)[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "X-Content-Type-Options: nosniff[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "X-XSS-Protection: 1; mode=block[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "Pragma: no-cache[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "Expires: 0[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "X-Frame-Options: DENY[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "Keep-Alive: timeout=5, max=100[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "Connection: Keep-Alive[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "[\r][\n]"
+2018-11-06 13:47:33 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 200
+2018-11-06 13:47:33 DEBUG headers:262 - << HTTP/1.1 200 200
+2018-11-06 13:47:33 DEBUG headers:265 - << Date: Tue, 06 Nov 2018 11:47:33 GMT
+2018-11-06 13:47:33 DEBUG headers:265 - << Server: Apache/2.4.25 (Debian)
+2018-11-06 13:47:33 DEBUG headers:265 - << X-Content-Type-Options: nosniff
+2018-11-06 13:47:33 DEBUG headers:265 - << X-XSS-Protection: 1; mode=block
+2018-11-06 13:47:33 DEBUG headers:265 - << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2018-11-06 13:47:33 DEBUG headers:265 - << Pragma: no-cache
+2018-11-06 13:47:33 DEBUG headers:265 - << Expires: 0
+2018-11-06 13:47:33 DEBUG headers:265 - << X-Frame-Options: DENY
+2018-11-06 13:47:33 DEBUG headers:265 - << Keep-Alive: timeout=5, max=100
+2018-11-06 13:47:33 DEBUG headers:265 - << Connection: Keep-Alive
+2018-11-06 13:47:33 DEBUG headers:265 - << Transfer-Encoding: chunked
+2018-11-06 13:47:33 DEBUG headers:265 - << Content-Type: application/json;charset=UTF-8
+2018-11-06 13:47:33 DEBUG DefaultHttpClient:509 - Connection can be kept alive for 5000 MILLISECONDS
+2018-11-06 13:47:33 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json;charset=UTF-8
+2018-11-06 13:47:33 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2018-11-06 13:47:33 DEBUG wire:73 -  << "7d[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "{[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "  "RestResponse" : {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    "messages" : [ "No matching state found for requested code [USA->WJ]." ],[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    "result" : [ ][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "  }[\n]"
+2018-11-06 13:47:33 DEBUG wire:87 -  << "}"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "0[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "[\r][\n]"
+2018-11-06 13:47:33 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@45d64d27
+2018-11-06 13:47:33 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive for 5000 MILLISECONDS
+2018-11-06 13:47:33 DEBUG BasicClientConnectionManager:161 - Get connection for route {}->http://services.groupkt.com:80
+2018-11-06 13:47:33 DEBUG DefaultClientConnectionOperator:177 - Connecting to services.groupkt.com:80
+2018-11-06 13:47:33 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2018-11-06 13:47:33 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2018-11-06 13:47:33 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2018-11-06 13:47:33 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2018-11-06 13:47:33 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2018-11-06 13:47:33 DEBUG DefaultClientConnection:274 - Sending request: GET /state/search/USA?text=wa HTTP/1.1
+2018-11-06 13:47:33 DEBUG wire:73 -  >> "GET /state/search/USA?text=wa HTTP/1.1[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  >> "Host: services.groupkt.com[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.1)[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  >> "[\r][\n]"
+2018-11-06 13:47:33 DEBUG headers:278 - >> GET /state/search/USA?text=wa HTTP/1.1
+2018-11-06 13:47:33 DEBUG headers:281 - >> Accept: */*
+2018-11-06 13:47:33 DEBUG headers:281 - >> Host: services.groupkt.com
+2018-11-06 13:47:33 DEBUG headers:281 - >> Connection: Keep-Alive
+2018-11-06 13:47:33 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.1)
+2018-11-06 13:47:33 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2018-11-06 13:47:33 DEBUG wire:73 -  << "HTTP/1.1 200 200[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "Date: Tue, 06 Nov 2018 11:47:33 GMT[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "Server: Apache/2.4.25 (Debian)[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "X-Content-Type-Options: nosniff[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "X-XSS-Protection: 1; mode=block[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "Pragma: no-cache[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "Expires: 0[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "X-Frame-Options: DENY[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "Keep-Alive: timeout=5, max=100[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "Connection: Keep-Alive[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "[\r][\n]"
+2018-11-06 13:47:33 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 200
+2018-11-06 13:47:33 DEBUG headers:262 - << HTTP/1.1 200 200
+2018-11-06 13:47:33 DEBUG headers:265 - << Date: Tue, 06 Nov 2018 11:47:33 GMT
+2018-11-06 13:47:33 DEBUG headers:265 - << Server: Apache/2.4.25 (Debian)
+2018-11-06 13:47:33 DEBUG headers:265 - << X-Content-Type-Options: nosniff
+2018-11-06 13:47:33 DEBUG headers:265 - << X-XSS-Protection: 1; mode=block
+2018-11-06 13:47:33 DEBUG headers:265 - << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2018-11-06 13:47:33 DEBUG headers:265 - << Pragma: no-cache
+2018-11-06 13:47:33 DEBUG headers:265 - << Expires: 0
+2018-11-06 13:47:33 DEBUG headers:265 - << X-Frame-Options: DENY
+2018-11-06 13:47:33 DEBUG headers:265 - << Keep-Alive: timeout=5, max=100
+2018-11-06 13:47:33 DEBUG headers:265 - << Connection: Keep-Alive
+2018-11-06 13:47:33 DEBUG headers:265 - << Transfer-Encoding: chunked
+2018-11-06 13:47:33 DEBUG headers:265 - << Content-Type: application/json;charset=UTF-8
+2018-11-06 13:47:33 DEBUG DefaultHttpClient:509 - Connection can be kept alive for 5000 MILLISECONDS
+2018-11-06 13:47:33 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json;charset=UTF-8
+2018-11-06 13:47:33 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2018-11-06 13:47:33 DEBUG wire:73 -  << "352[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "{[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "  "RestResponse" : {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    "messages" : [ "Total [4] records found." ],[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    "result" : [ {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 8,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Delaware",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "DE",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "6446SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Wilmington",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Dover"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 11,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Hawaii",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "HI",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "6423SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Honolulu",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Honolulu"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 15,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Iowa",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "IA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "55857SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Des Moines",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Des Moines"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 47,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Washington",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "WA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "184661SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Seattle",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Olympia"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    } ][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "  }[\n]"
+2018-11-06 13:47:33 DEBUG wire:87 -  << "}"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "0[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "[\r][\n]"
+2018-11-06 13:47:33 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@783115d9
+2018-11-06 13:47:33 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive for 5000 MILLISECONDS
+2018-11-06 13:47:33 DEBUG BasicClientConnectionManager:161 - Get connection for route {}->http://services.groupkt.com:80
+2018-11-06 13:47:33 DEBUG DefaultClientConnectionOperator:177 - Connecting to services.groupkt.com:80
+2018-11-06 13:47:33 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2018-11-06 13:47:33 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2018-11-06 13:47:33 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2018-11-06 13:47:33 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2018-11-06 13:47:33 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2018-11-06 13:47:33 DEBUG DefaultClientConnection:274 - Sending request: GET /state/get/USA/all HTTP/1.1
+2018-11-06 13:47:33 DEBUG wire:73 -  >> "GET /state/get/USA/all HTTP/1.1[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  >> "Host: services.groupkt.com[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.1)[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  >> "[\r][\n]"
+2018-11-06 13:47:33 DEBUG headers:278 - >> GET /state/get/USA/all HTTP/1.1
+2018-11-06 13:47:33 DEBUG headers:281 - >> Accept: */*
+2018-11-06 13:47:33 DEBUG headers:281 - >> Host: services.groupkt.com
+2018-11-06 13:47:33 DEBUG headers:281 - >> Connection: Keep-Alive
+2018-11-06 13:47:33 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.1)
+2018-11-06 13:47:33 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2018-11-06 13:47:33 DEBUG wire:73 -  << "HTTP/1.1 200 200[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "Date: Tue, 06 Nov 2018 11:47:33 GMT[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "Server: Apache/2.4.25 (Debian)[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "X-Content-Type-Options: nosniff[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "X-XSS-Protection: 1; mode=block[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "Pragma: no-cache[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "Expires: 0[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "X-Frame-Options: DENY[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "Keep-Alive: timeout=5, max=100[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "Connection: Keep-Alive[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "[\r][\n]"
+2018-11-06 13:47:33 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 200
+2018-11-06 13:47:33 DEBUG headers:262 - << HTTP/1.1 200 200
+2018-11-06 13:47:33 DEBUG headers:265 - << Date: Tue, 06 Nov 2018 11:47:33 GMT
+2018-11-06 13:47:33 DEBUG headers:265 - << Server: Apache/2.4.25 (Debian)
+2018-11-06 13:47:33 DEBUG headers:265 - << X-Content-Type-Options: nosniff
+2018-11-06 13:47:33 DEBUG headers:265 - << X-XSS-Protection: 1; mode=block
+2018-11-06 13:47:33 DEBUG headers:265 - << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2018-11-06 13:47:33 DEBUG headers:265 - << Pragma: no-cache
+2018-11-06 13:47:33 DEBUG headers:265 - << Expires: 0
+2018-11-06 13:47:33 DEBUG headers:265 - << X-Frame-Options: DENY
+2018-11-06 13:47:33 DEBUG headers:265 - << Keep-Alive: timeout=5, max=100
+2018-11-06 13:47:33 DEBUG headers:265 - << Connection: Keep-Alive
+2018-11-06 13:47:33 DEBUG headers:265 - << Transfer-Encoding: chunked
+2018-11-06 13:47:33 DEBUG headers:265 - << Content-Type: application/json;charset=UTF-8
+2018-11-06 13:47:33 DEBUG DefaultHttpClient:509 - Connection can be kept alive for 5000 MILLISECONDS
+2018-11-06 13:47:33 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json;charset=UTF-8
+2018-11-06 13:47:33 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2018-11-06 13:47:33 DEBUG wire:73 -  << "1ff8[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "{[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "  "RestResponse" : {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    "messages" : [ "Total [55] records found." ],[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    "result" : [ {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 1,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Alabama",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "AL",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "135767SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Birmingham",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Montgomery"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 2,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Alaska",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "AK",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "1723337SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Anchorage",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Juneau"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 3,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Arizona",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "AZ",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "113594SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Phoenix",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Phoenix"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 4,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Arkansas",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "AR",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "52035SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Little Rock",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Little Rock"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 5,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "California",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "CA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "423967SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Los Angeles",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Sacramento"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 6,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Colorado",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "CO",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "103642SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Denver",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Denver"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 7,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Connecticut",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "CT",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "14357SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Bridgeport",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Hartford"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 8,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Delaware",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "DE",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "6446SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Wilmington",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Dover"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 9,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Florida",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "FL",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "170312SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Jacksonville",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Tallahassee"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 10,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Georgia",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "GA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "57513SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Atlanta",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Atlanta"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 11,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Hawaii",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "HI",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "6423SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Honolulu",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Honolulu"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 12,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Idaho",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "ID",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "82643SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Boise",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Boise"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 13,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Illinois",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "IL",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "149995SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Chicago",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Springfield"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 14,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Indiana",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "IN",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "35826SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Indianapolis",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Indianapolis"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 15,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Iowa",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "IA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "55857SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Des Moines",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Des Moines"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 16,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Kansas",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "KS",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "213100SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Wichita",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Topeka"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 17,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Kentucky",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "KY",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "104656SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Louisville",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Frankfort"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 18,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Louisiana",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "LA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "135659SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "New Orleans",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Baton Rouge"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 19,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Maine",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "ME",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "91633SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Portland",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Augusta"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 20,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Maryland",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "MD",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "32131SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Baltimore",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Annapolis"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 21,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Massachusetts",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "MA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "7800SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Boston",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Boston"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 22,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Michigan",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "MI",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "250487SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Detroit",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Lansing"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 23,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Minnesota",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "MN",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "225163SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Minneapolis",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "St. Paul"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 24,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Mississippi",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "MS",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "46923SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Jackson",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Jackson"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 25,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Missouri",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "MO",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "180540SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Kansas City",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Jefferson City"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 26,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Montana",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "MT",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "380831SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Billings",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Helena"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 27,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Nebraska",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "NE",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "200330SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Omaha",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Lincoln"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 28,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Nevada",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "NV",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "286380SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Las Vegas",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Carson City"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 29,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "New Hampshire",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "NH",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "24214SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Manchester",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Concord"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 30,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "New Jersey",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "NJ",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "22591SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Newark",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Trenton"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 31,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "New Mexico",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "NM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "314917SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Albuquerque",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Santa Fe"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 32,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "New York",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "NY",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "141297SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "New York City",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Albany"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 33,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "North Carolina",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "NC",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "139391SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Charlotte",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Raleigh"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 34,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "North Dakota",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "ND",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "183108SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Fargo",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Bismarck"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 35,[\n]"
+2018-11-06 13:47:33 DEBUG DefaultClientConnection:180 - Connection 0.0.0.0:59883<->45.79.172.152:80 closed
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Ohio",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "OH",[\n]"
+2018-11-06 13:47:33 DEBUG DefaultClientConnection:180 - Connection 0.0.0.0:59884<->45.79.172.152:80 closed
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "40861SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Columbus",[\n]"
+2018-11-06 13:47:33 DEBUG DefaultClientConnection:180 - Connection 0.0.0.0:59885<->45.79.172.152:80 closed
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Columbus"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 36,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Oklahoma",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "OK",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "68595SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Oklahoma City",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Oklahoma City"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 37,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Oregon",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "OR",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "254799SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Portland",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Salem"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 38,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Pennsylvania",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "PA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "119280SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Philadelphia",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Harrisburg"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 39,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Rhode Island",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "RI",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "1034SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Providence",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Providence"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 40,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "South Carolina",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "SC",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "82933SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Charleston",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Columbia"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:87 -  << "      "id" : 4"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "1,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "South Dakota",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "SD",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "199729SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Sioux Falls",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Pierre"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 42,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Tennessee",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "TN",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "41235SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Nashville",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Nashville"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 43,[\n]"
+2018-11-06 13:47:33 DEBUG wire:87 -  << "      ""
+2018-11-06 13:47:33 DEBUG wire:73 -  << "[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "91f[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Texas",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "TX",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "695662SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Houston",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Austin"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 44,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Utah",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "UT",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "82170SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Salt Lake City",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Salt Lake City"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 45,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Vermont",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "VT",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "24906SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Burlington",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Montpelier"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 46,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Virginia",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "VA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "110787SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Virginia Beach",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Richmond"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 47,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Washington",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "WA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "184661SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Seattle",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Olympia"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 48,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "West Virginia",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "WV",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "24038SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Charleston",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Charleston"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 49,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Wisconsin",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "WI",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "169635SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Milwaukee",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Madison"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 50,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Wyoming",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "WY",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "97093SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "largest_city" : "Cheyenne",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Cheyenne"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 51,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "American Samoa",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "AS",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "1505SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Pago Pago"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 52,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Guam",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "GU",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "1478SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Hag[0xc3][0xa5]t[0xc3][0xb1]a"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 53,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Northern Mariana Islands",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "MP",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "5117SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Saipan"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 54,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "Puerto Rico",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "PR",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "13791SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "San Juan"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    }, {[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "id" : 55,[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "name" : "U.S. Virgin Islands",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "abbr" : "VI",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "area" : "1898SKM",[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "      "capital" : "Charlotte Amalie"[\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "    } ][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "  }[\n]"
+2018-11-06 13:47:33 DEBUG wire:87 -  << "}"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "0[\r][\n]"
+2018-11-06 13:47:33 DEBUG wire:73 -  << "[\r][\n]"
+2018-11-06 13:47:33 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@f3021cb
+2018-11-06 13:47:33 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive for 5000 MILLISECONDS
+2018-11-06 13:47:33 DEBUG BasicClientConnectionManager:161 - Get connection for route {}->http://services.groupkt.com:80
+2018-11-06 13:47:33 DEBUG DefaultClientConnectionOperator:177 - Connecting to services.groupkt.com:80
+2018-11-06 13:47:34 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2018-11-06 13:47:34 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2018-11-06 13:47:34 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2018-11-06 13:47:34 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2018-11-06 13:47:34 DEBUG DefaultHttpClient:682 - Attempt 1 to execute request
+2018-11-06 13:47:34 DEBUG DefaultClientConnection:274 - Sending request: GET /state/get/USA/AK HTTP/1.1
+2018-11-06 13:47:34 DEBUG wire:73 -  >> "GET /state/get/USA/AK HTTP/1.1[\r][\n]"
+2018-11-06 13:47:34 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2018-11-06 13:47:34 DEBUG wire:73 -  >> "Host: services.groupkt.com[\r][\n]"
+2018-11-06 13:47:34 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2018-11-06 13:47:34 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.1)[\r][\n]"
+2018-11-06 13:47:34 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2018-11-06 13:47:34 DEBUG wire:73 -  >> "[\r][\n]"
+2018-11-06 13:47:34 DEBUG headers:278 - >> GET /state/get/USA/AK HTTP/1.1
+2018-11-06 13:47:34 DEBUG headers:281 - >> Accept: */*
+2018-11-06 13:47:34 DEBUG headers:281 - >> Host: services.groupkt.com
+2018-11-06 13:47:34 DEBUG headers:281 - >> Connection: Keep-Alive
+2018-11-06 13:47:34 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.3 (Java/11.0.1)
+2018-11-06 13:47:34 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2018-11-06 13:47:34 DEBUG wire:73 -  << "HTTP/1.1 200 200[\r][\n]"
+2018-11-06 13:47:34 DEBUG wire:73 -  << "Date: Tue, 06 Nov 2018 11:47:34 GMT[\r][\n]"
+2018-11-06 13:47:34 DEBUG wire:73 -  << "Server: Apache/2.4.25 (Debian)[\r][\n]"
+2018-11-06 13:47:34 DEBUG wire:73 -  << "X-Content-Type-Options: nosniff[\r][\n]"
+2018-11-06 13:47:34 DEBUG wire:73 -  << "X-XSS-Protection: 1; mode=block[\r][\n]"
+2018-11-06 13:47:34 DEBUG wire:73 -  << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+2018-11-06 13:47:34 DEBUG wire:73 -  << "Pragma: no-cache[\r][\n]"
+2018-11-06 13:47:34 DEBUG wire:73 -  << "Expires: 0[\r][\n]"
+2018-11-06 13:47:34 DEBUG wire:73 -  << "X-Frame-Options: DENY[\r][\n]"
+2018-11-06 13:47:34 DEBUG wire:73 -  << "Keep-Alive: timeout=5, max=100[\r][\n]"
+2018-11-06 13:47:34 DEBUG wire:73 -  << "Connection: Keep-Alive[\r][\n]"
+2018-11-06 13:47:34 DEBUG wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2018-11-06 13:47:34 DEBUG wire:73 -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+2018-11-06 13:47:34 DEBUG wire:73 -  << "[\r][\n]"
+2018-11-06 13:47:34 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 200
+2018-11-06 13:47:34 DEBUG headers:262 - << HTTP/1.1 200 200
+2018-11-06 13:47:34 DEBUG headers:265 - << Date: Tue, 06 Nov 2018 11:47:34 GMT
+2018-11-06 13:47:34 DEBUG headers:265 - << Server: Apache/2.4.25 (Debian)
+2018-11-06 13:47:34 DEBUG headers:265 - << X-Content-Type-Options: nosniff
+2018-11-06 13:47:34 DEBUG headers:265 - << X-XSS-Protection: 1; mode=block
+2018-11-06 13:47:34 DEBUG headers:265 - << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2018-11-06 13:47:34 DEBUG headers:265 - << Pragma: no-cache
+2018-11-06 13:47:34 DEBUG headers:265 - << Expires: 0
+2018-11-06 13:47:34 DEBUG headers:265 - << X-Frame-Options: DENY
+2018-11-06 13:47:34 DEBUG headers:265 - << Keep-Alive: timeout=5, max=100
+2018-11-06 13:47:34 DEBUG headers:265 - << Connection: Keep-Alive
+2018-11-06 13:47:34 DEBUG headers:265 - << Transfer-Encoding: chunked
+2018-11-06 13:47:34 DEBUG headers:265 - << Content-Type: application/json;charset=UTF-8
+2018-11-06 13:47:34 DEBUG DefaultHttpClient:509 - Connection can be kept alive for 5000 MILLISECONDS
+2018-11-06 13:47:34 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json;charset=UTF-8
+2018-11-06 13:47:34 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2018-11-06 13:47:34 DEBUG wire:73 -  << "11e[\r][\n]"
+2018-11-06 13:47:34 DEBUG wire:73 -  << "{[\n]"
+2018-11-06 13:47:34 DEBUG wire:73 -  << "  "RestResponse" : {[\n]"
+2018-11-06 13:47:34 DEBUG wire:73 -  << "    "messages" : [ "State found matching code [AK]." ],[\n]"
+2018-11-06 13:47:34 DEBUG wire:73 -  << "    "result" : {[\n]"
+2018-11-06 13:47:34 DEBUG wire:73 -  << "      "id" : 2,[\n]"
+2018-11-06 13:47:34 DEBUG wire:73 -  << "      "country" : "USA",[\n]"
+2018-11-06 13:47:34 DEBUG wire:73 -  << "      "name" : "Alaska",[\n]"
+2018-11-06 13:47:34 DEBUG wire:73 -  << "      "abbr" : "AK",[\n]"
+2018-11-06 13:47:34 DEBUG wire:73 -  << "      "area" : "1723337SKM",[\n]"
+2018-11-06 13:47:34 DEBUG wire:73 -  << "      "largest_city" : "Anchorage",[\n]"
+2018-11-06 13:47:34 DEBUG wire:73 -  << "      "capital" : "Juneau"[\n]"
+2018-11-06 13:47:34 DEBUG wire:73 -  << "    }[\n]"
+2018-11-06 13:47:34 DEBUG wire:73 -  << "  }[\n]"
+2018-11-06 13:47:34 DEBUG wire:87 -  << "}"
+2018-11-06 13:47:34 DEBUG wire:73 -  << "[\r][\n]"
+2018-11-06 13:47:34 DEBUG wire:73 -  << "0[\r][\n]"
+2018-11-06 13:47:34 DEBUG wire:73 -  << "[\r][\n]"
+2018-11-06 13:47:34 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@27ace0b1
+2018-11-06 13:47:34 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive for 5000 MILLISECONDS

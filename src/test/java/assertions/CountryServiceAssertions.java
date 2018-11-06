@@ -1,10 +1,10 @@
 package assertions;
 
-import com.sun.tools.xjc.generator.bean.field.Messages;
 import dto.CountriesListResponseDTO;
 import dto.CountryResponseDTO;
 import org.testng.Assert;
-
+import util.PropertiesUtil;
+import util.UrlConverter;
 
 
 import java.util.Arrays;
@@ -12,55 +12,71 @@ import java.util.List;
 
 public class CountryServiceAssertions extends MainAssertions {
 
-    String name = "Ukraine";
-    String alpha2_code = "UA";
-    String alpha3_code = "UKR";
+    public void assertResponseMessageForCountriesList(String expectedMessage, CountriesListResponseDTO resultResponse, String value) {
 
-
-    public void assertResponseMessageForCountriesList(String expMsg, CountriesListResponseDTO resultResponse, String value) {
-        List<String> expectedMessage;
-
-
+        List<String> expectedMessageBuild;
         if (resultResponse.getRestResponse().getResult().size() > 0) {
-            expectedMessage = Arrays.asList(expMsg + resultResponse.getRestResponse().getResult().size() + "] records found.");
+            expectedMessageBuild = Arrays.
+                    asList(PropertiesUtil.
+                            getProp(expectedMessage).
+                            replaceAll("TEXT", "[" +
+                                    resultResponse.
+                                            getRestResponse().
+                                            getResult().
+                                            size() + "]"));
         } else {
-            expectedMessage = Arrays.asList(expMsg + value + "].");
+            expectedMessageBuild = Arrays.
+                    asList(PropertiesUtil.
+                            getProp(expectedMessage).
+                            replaceAll("TEXT", "[" +
+                                    PropertiesUtil.getProp(value) + "]"));
         }
 
-        Assert.assertEquals(expectedMessage, resultResponse.getRestResponse().getMessages(), "Incorrect States List Response Message");
+        Assert.assertEquals(expectedMessageBuild, resultResponse.getRestResponse().getMessages(), "Incorrect States List Response Message");
+    }
+
+    public void assertResponseContainsListOfAllCountries(String expectedCount, CountriesListResponseDTO resultResponse) {
+        Assert.assertEquals(Integer.parseInt(PropertiesUtil.getProp(expectedCount)), resultResponse.getRestResponse().getResult().size(), "Incorrect States Count");
+    }
+
+    public void assertResponseContainsCorrectCountryInfo(String expctedInfo, CountryResponseDTO countryResponseDTO) {
+        String[] uriReq = UrlConverter.splitResource(expctedInfo);
+        String code = uriReq[3];
+        if (uriReq[2].equals("iso2code")) {
+            Assert.assertEquals(code, countryResponseDTO.getRestResponse().getResult().getAlpha2_code(), "Incorrect alpha2_code");
+        } else {
+            Assert.assertEquals(code, countryResponseDTO.getRestResponse().getResult().getAlpha3_code(), "Incorrect alpha3_code");
+        }
 
     }
 
-    public void assertResponseContainsListOfAllCountries(int expectedCount, CountriesListResponseDTO resultResponse) {
-        Assert.assertEquals(expectedCount, resultResponse.getRestResponse().getResult().size(), "Incorrect States Count");
-    }
+    public void assertResponseMessageForCountry(String expectedMessage, CountryResponseDTO countryResponseDTO, String resourseURL) {
 
-    public void assertResponseContainsCorrectCountryInfo(CountryResponseDTO countryResponseDTO) {
-
-        Assert.assertEquals(name, countryResponseDTO.getRestResponse().getResult().getName(), "Incorrect Country Name");
-        Assert.assertEquals(alpha2_code, countryResponseDTO.getRestResponse().getResult().getAlpha2_code(), "Incorrect alpha2_code");
-        Assert.assertEquals(alpha3_code, countryResponseDTO.getRestResponse().getResult().getAlpha3_code(), "Incorrect alpha3_code");
-
-    }
-
-    public void assertResponseMessageForCountry(String expected, CountryResponseDTO countryResponseDTO, String resourseURL) {
-
-        List<String> expectedMessage;
-        String[] uriReq = resourseURL.split("/");
+        List<String> expectedMessageBuild;
+        String[] uriReq = UrlConverter.splitResource(resourseURL);
 
         if (countryResponseDTO.getRestResponse().getResult() != null && uriReq[2].equals("iso2code")) {
 
-            expectedMessage = Arrays.asList(expected + countryResponseDTO.getRestResponse().getResult().getAlpha2_code() + "].");
+            expectedMessageBuild = Arrays.
+                    asList(PropertiesUtil.
+                            getProp(expectedMessage).
+                            replaceAll("TEXT", "[" +
+                                    countryResponseDTO.getRestResponse().getResult().getAlpha2_code() + "]"));
 
         } else if (countryResponseDTO.getRestResponse().getResult() != null && uriReq[2].equals("iso3code")) {
-            expectedMessage = Arrays.asList(expected + countryResponseDTO.getRestResponse().getResult().getAlpha3_code() + "].");
+
+            expectedMessageBuild = Arrays.asList(PropertiesUtil
+                    .getProp(expectedMessage).
+                            replaceAll("TEXT", "[" +
+                                    countryResponseDTO.getRestResponse().getResult().getAlpha3_code() + "]"));
         } else {
 
-            expectedMessage = Arrays.asList(expected + uriReq[3] + "].");
+            expectedMessageBuild = Arrays.asList(PropertiesUtil
+                    .getProp(expectedMessage).
+                            replaceAll("TEXT", "[" +
+                                    uriReq[3] + "]"));
         }
-
-        Assert.assertEquals(expectedMessage, countryResponseDTO.getRestResponse().getMessages(), "Incorrect Country Response Message");
-
+        Assert.assertEquals(expectedMessageBuild, countryResponseDTO.getRestResponse().getMessages(), "Incorrect Country Response Message");
     }
 
 

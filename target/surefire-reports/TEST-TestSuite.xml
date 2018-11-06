@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="5.935" tests="13" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="4.925" tests="12" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\ANHELI~1\AppData\Local\Temp\surefire18101109534511608251\surefirebooter8709683058708132400.jar C:\Users\Anhelina_Zhukova\AppData\Local\Temp\surefire18101109534511608251 2018-11-05T18-28-06_184-jvmRun1 surefire5071699080134465023tmp surefire_014290887673786367095tmp"/>
+    <property name="sun.java.command" value="C:\Users\ANHELI~1\AppData\Local\Temp\surefire9981218946556702064\surefirebooter5533673337823761483.jar C:\Users\Anhelina_Zhukova\AppData\Local\Temp\surefire9981218946556702064 2018-11-06T13-46-45_539-jvmRun1 surefire13138027983563644026tmp surefire_03969727637443670092tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Anhelina_Zhukova\Desktop\TestingFramework\target\test-classes;C:\Users\Anhelina_Zhukova\Desktop\TestingFramework\target\classes;C:\Users\Anhelina_Zhukova\.m2\repository\io\rest-assured\rest-assured\3.2.0\rest-assured-3.2.0.jar;C:\Users\Anhelina_Zhukova\.m2\repository\org\codehaus\groovy\groovy\2.4.15\groovy-2.4.15.jar;C:\Users\Anhelina_Zhukova\.m2\repository\org\codehaus\groovy\groovy-xml\2.4.15\groovy-xml-2.4.15.jar;C:\Users\Anhelina_Zhukova\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\Anhelina_Zhukova\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\Anhelina_Zhukova\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Anhelina_Zhukova\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\Anhelina_Zhukova\.m2\repository\org\apache\httpcomponents\httpmime\4.5.1\httpmime-4.5.1.jar;C:\Users\Anhelina_Zhukova\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Anhelina_Zhukova\.m2\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar;C:\Users\Anhelina_Zhukova\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Anhelina_Zhukova\.m2\repository\io\rest-assured\xml-path\3.2.0\xml-path-3.2.0.jar;C:\Users\Anhelina_Zhukova\.m2\repository\javax\xml\bind\jaxb-api\2.2.12\jaxb-api-2.2.12.jar;C:\Users\Anhelina_Zhukova\.m2\repository\com\sun\xml\bind\jaxb-osgi\2.2.10\jaxb-osgi-2.2.10.jar;C:\Users\Anhelina_Zhukova\.m2\repository\org\apache\sling\org.apache.sling.javax.activation\0.1.0\org.apache.sling.javax.activation-0.1.0.jar;C:\Users\Anhelina_Zhukova\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\Anhelina_Zhukova\.m2\repository\com\google\code\gson\gson\2.8.5\gson-2.8.5.jar;C:\Users\Anhelina_Zhukova\.m2\repository\org\projectlombok\lombok-maven-plugin\1.18.2.0\lombok-maven-plugin-1.18.2.0.jar;C:\Users\Anhelina_Zhukova\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;C:\Users\Anhelina_Zhukova\.m2\repository\org\projectlombok\lombok\1.18.2\lombok-1.18.2.jar;C:\Users\Anhelina_Zhukova\.m2\repository\org\sonatype\plexus\plexus-build-api\0.0.7\plexus-build-api-0.0.7.jar;C:\Users\Anhelina_Zhukova\.m2\repository\org\codehaus\plexus\plexus-utils\1.5.8\plexus-utils-1.5.8.jar;C:\Users\Anhelina_Zhukova\.m2\repository\org\testng\testng\7.0.0-beta1\testng-7.0.0-beta1.jar;C:\Users\Anhelina_Zhukova\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\Anhelina_Zhukova\.m2\repository\io\rest-assured\json-path\3.1.1\json-path-3.1.1.jar;C:\Users\Anhelina_Zhukova\.m2\repository\org\codehaus\groovy\groovy-json\2.4.12\groovy-json-2.4.12.jar;C:\Users\Anhelina_Zhukova\.m2\repository\io\rest-assured\rest-assured-common\3.1.1\rest-assured-common-3.1.1.jar;C:\Users\Anhelina_Zhukova\.m2\repository\org\slf4j\slf4j-api\1.7.5\slf4j-api-1.7.5.jar;C:\Users\Anhelina_Zhukova\.m2\repository\org\slf4j\slf4j-log4j12\1.7.5\slf4j-log4j12-1.7.5.jar;C:\Users\Anhelina_Zhukova\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\ANHELI~1\AppData\Local\Temp\surefire18101109534511608251\surefirebooter8709683058708132400.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\ANHELI~1\AppData\Local\Temp\surefire9981218946556702064\surefirebooter5533673337823761483.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.1+13-LTS"/>
@@ -60,17 +60,16 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="getCountriesByAnyFreeFormText" classname="scenarios.CountryObjectValidate" time="0.918"/>
-  <testcase name="getCountryByThreeCharISO" classname="scenarios.CountryObjectValidate" time="0.326"/>
-  <testcase name="getCountryByTwoCharISO" classname="scenarios.CountryObjectValidate" time="0.374"/>
-  <testcase name="getNothingMatchingFoundByAnyFreeFormText" classname="scenarios.CountryObjectValidate" time="0.348"/>
-  <testcase name="getNothingMatchingFoundByThreeCharISO" classname="scenarios.CountryObjectValidate" time="0.323"/>
-  <testcase name="getNothingMatchingFoundByTwoCharISO" classname="scenarios.CountryObjectValidate" time="0.344"/>
-  <testcase name="successGetAllCountriesList" classname="scenarios.CountryObjectValidate" time="0.583"/>
-  <testcase name="getNothingMatchingFound" classname="scenarios.StateObjectValidate" time="0.344"/>
-  <testcase name="getNothingStateByAnyFreeFormText" classname="scenarios.StateObjectValidate" time="0.334"/>
-  <testcase name="getStateByAnyFreeFormText" classname="scenarios.StateObjectValidate" time="0.35"/>
-  <testcase name="successGetAllStatesResponse" classname="scenarios.StateObjectValidate" time="0.407"/>
-  <testcase name="successGetOneStateResponse" classname="scenarios.StateObjectValidate" time="0.341"/>
-  <testcase name="test" classname="scenarios.StateObjectValidate" time="0.383"/>
+  <testcase name="getCountriesByAnyFreeFormText" classname="scenarios.CountryObjectValidate" time="0.86"/>
+  <testcase name="getCountryByThreeCharISO" classname="scenarios.CountryObjectValidate" time="0.309"/>
+  <testcase name="getCountryByTwoCharISO" classname="scenarios.CountryObjectValidate" time="0.288"/>
+  <testcase name="getNothingMatchingFoundByAnyFreeFormText" classname="scenarios.CountryObjectValidate" time="0.322"/>
+  <testcase name="getNothingMatchingFoundByThreeCharISO" classname="scenarios.CountryObjectValidate" time="0.308"/>
+  <testcase name="getNothingMatchingFoundByTwoCharISO" classname="scenarios.CountryObjectValidate" time="0.327"/>
+  <testcase name="successGetAllCountriesList" classname="scenarios.CountryObjectValidate" time="0.479"/>
+  <testcase name="getNothingMatchingFound" classname="scenarios.StateObjectValidate" time="0.288"/>
+  <testcase name="getNothingStateByAnyFreeFormText" classname="scenarios.StateObjectValidate" time="0.295"/>
+  <testcase name="getStateByAnyFreeFormText" classname="scenarios.StateObjectValidate" time="0.304"/>
+  <testcase name="successGetAllStatesResponse" classname="scenarios.StateObjectValidate" time="0.323"/>
+  <testcase name="successGetOneStateResponse" classname="scenarios.StateObjectValidate" time="0.283"/>
 </testsuite>

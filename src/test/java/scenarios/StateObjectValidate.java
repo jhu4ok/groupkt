@@ -16,10 +16,6 @@ public class StateObjectValidate {
 
     StateServiceAssertions assertion = new StateServiceAssertions();
     StepsForStateService step = new StepsForStateService();
-    String expectedMessageSuccess = "State found matching code [*].";
-    String expectedMessageSuccessList = "Total [";
-    String expectedMessageNothing = "No matching state found for requested code [";
-
 
     @BeforeMethod
     public void setUp() {
@@ -35,7 +31,7 @@ public class StateObjectValidate {
         StateListResponseDTO stateListResponseDTO = step.convertResponseToStatesListObject(getResponse);
 
         assertion.assertStatusCode(getResponse, 200);
-        assertion.assertResponseMessageForStatesList(expectedMessageSuccessList, stateListResponseDTO, "", "");
+        assertion.assertResponseMessageForStatesList("MESSAGE_SUCCESS_LIST", stateListResponseDTO, "", "");
         assertion.assertResponseContainsListOfAllStates("USA_STATES_COUNT", stateListResponseDTO);
     }
 
@@ -46,8 +42,8 @@ public class StateObjectValidate {
         StateResponseDTO stateResponseDTO = step.convertResponseToStateObject(getResponse);
 
         assertion.assertStatusCode(getResponse, 200);
-        assertion.assertResponseMessageForState("MessageSuccess", stateResponseDTO, "ONE_STATE_RESOURCE");
-        assertion.assertResponseContainsCorrectStateInfo(stateResponseDTO);
+        assertion.assertResponseMessageForState("MESSAGE_SUCCESS_STATE", stateResponseDTO, "ONE_STATE_RESOURCE");
+        assertion.assertResponseContainsCorrectStateInfo("ONE_STATE_RESOURCE", stateResponseDTO);
     }
 
 
@@ -58,7 +54,7 @@ public class StateObjectValidate {
         StateResponseDTO stateResponseDTO = step.convertResponseToStateObject(getResponse);
 
         assertion.assertStatusCode(getResponse, 200);
-        assertion.assertResponseMessageForState(expectedMessageNothing, stateResponseDTO, "INVALID_STATE_RESOURCE");
+        assertion.assertResponseMessageForState("MESSAGE_NOTHING_STATE", stateResponseDTO, "INVALID_STATE_RESOURCE");
 
     }
 
@@ -70,7 +66,7 @@ public class StateObjectValidate {
         StateListResponseDTO stateListResponseDTO = step.convertResponseToStatesListObject(getResponse);
 
         assertion.assertStatusCode(getResponse, 200);
-        assertion.assertResponseMessageForStatesList(expectedMessageSuccessList, stateListResponseDTO, "", "");
+        assertion.assertResponseMessageForStatesList("MESSAGE_SUCCESS_LIST", stateListResponseDTO, "", "");
         assertion.assertResponseContainsListOfAllStates("COUNT_WA_STATES", stateListResponseDTO);
 
     }
@@ -83,7 +79,8 @@ public class StateObjectValidate {
         StateListResponseDTO stateListResponseDTO = step.convertResponseToStatesListObject(getResponse);
 
         assertion.assertStatusCode(getResponse, 200);
-        assertion.assertResponseMessageForStatesList(expectedMessageNothing,
+
+        assertion.assertResponseMessageForStatesList("MESSAGE_NOTHING_STATE",
                 stateListResponseDTO, "SEARCH_STATE_RESOURCE", "INVALID_TEXT");
         assertion.assertResponseContainsListOfAllStates("NOTHING", stateListResponseDTO);
 

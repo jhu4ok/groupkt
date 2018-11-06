@@ -1,115 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-11-05T18:28:06 EET" name="Automation Test" finished-at="2018-11-05T18:28:12 EET" duration-ms="5634">
+  <suite started-at="2018-11-06T13:46:46 EET" name="Automation Test" finished-at="2018-11-06T13:46:50 EET" duration-ms="4636">
     <groups>
     </groups>
-    <test started-at="2018-11-05T18:28:06 EET" name="Smoke Test" finished-at="2018-11-05T18:28:12 EET" duration-ms="5634">
+    <test started-at="2018-11-06T13:46:46 EET" name="Smoke Test" finished-at="2018-11-06T13:46:50 EET" duration-ms="4636">
       <class name="scenarios.StateObjectValidate">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:scenarios.StateObjectValidate@489115ef]" started-at="2018-11-05T18:28:10 EET" name="setUp" finished-at="2018-11-05T18:28:10 EET" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="getNothingMatchingFound()[pri:0, instance:scenarios.StateObjectValidate@489115ef]" started-at="2018-11-05T18:28:10 EET" name="getNothingMatchingFound" finished-at="2018-11-05T18:28:10 EET" duration-ms="344" status="PASS">
+        <test-method signature="getNothingMatchingFound()[pri:0, instance:scenarios.StateObjectValidate@6ed3ccb2]" started-at="2018-11-06T13:46:49 EET" name="getNothingMatchingFound" finished-at="2018-11-06T13:46:49 EET" duration-ms="289" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getNothingMatchingFound -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:scenarios.StateObjectValidate@489115ef]" started-at="2018-11-05T18:28:10 EET" name="setUp" finished-at="2018-11-05T18:28:10 EET" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:scenarios.StateObjectValidate@6ed3ccb2]" started-at="2018-11-06T13:46:49 EET" name="setUp" finished-at="2018-11-06T13:46:49 EET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="getNothingStateByAnyFreeFormText()[pri:0, instance:scenarios.StateObjectValidate@489115ef]" started-at="2018-11-05T18:28:10 EET" name="getNothingStateByAnyFreeFormText" finished-at="2018-11-05T18:28:11 EET" duration-ms="335" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:scenarios.StateObjectValidate@6ed3ccb2]" started-at="2018-11-06T13:46:49 EET" name="setUp" finished-at="2018-11-06T13:46:49 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="getNothingStateByAnyFreeFormText()[pri:0, instance:scenarios.StateObjectValidate@6ed3ccb2]" started-at="2018-11-06T13:46:49 EET" name="getNothingStateByAnyFreeFormText" finished-at="2018-11-06T13:46:49 EET" duration-ms="294" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getNothingStateByAnyFreeFormText -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:scenarios.StateObjectValidate@489115ef]" started-at="2018-11-05T18:28:11 EET" name="setUp" finished-at="2018-11-05T18:28:11 EET" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:scenarios.StateObjectValidate@6ed3ccb2]" started-at="2018-11-06T13:46:49 EET" name="setUp" finished-at="2018-11-06T13:46:49 EET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="getStateByAnyFreeFormText()[pri:0, instance:scenarios.StateObjectValidate@489115ef]" started-at="2018-11-05T18:28:11 EET" name="getStateByAnyFreeFormText" finished-at="2018-11-05T18:28:11 EET" duration-ms="349" status="PASS">
+        <test-method signature="getStateByAnyFreeFormText()[pri:0, instance:scenarios.StateObjectValidate@6ed3ccb2]" started-at="2018-11-06T13:46:49 EET" name="getStateByAnyFreeFormText" finished-at="2018-11-06T13:46:50 EET" duration-ms="303" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getStateByAnyFreeFormText -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:scenarios.StateObjectValidate@489115ef]" started-at="2018-11-05T18:28:11 EET" name="setUp" finished-at="2018-11-05T18:28:11 EET" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:scenarios.StateObjectValidate@6ed3ccb2]" started-at="2018-11-06T13:46:50 EET" name="setUp" finished-at="2018-11-06T13:46:50 EET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="successGetAllStatesResponse()[pri:0, instance:scenarios.StateObjectValidate@489115ef]" started-at="2018-11-05T18:28:11 EET" name="successGetAllStatesResponse" finished-at="2018-11-05T18:28:11 EET" duration-ms="407" status="PASS">
+        <test-method signature="successGetAllStatesResponse()[pri:0, instance:scenarios.StateObjectValidate@6ed3ccb2]" started-at="2018-11-06T13:46:50 EET" name="successGetAllStatesResponse" finished-at="2018-11-06T13:46:50 EET" duration-ms="322" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- successGetAllStatesResponse -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:scenarios.StateObjectValidate@489115ef]" started-at="2018-11-05T18:28:11 EET" name="setUp" finished-at="2018-11-05T18:28:11 EET" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="successGetOneStateResponse()[pri:0, instance:scenarios.StateObjectValidate@489115ef]" started-at="2018-11-05T18:28:11 EET" name="successGetOneStateResponse" finished-at="2018-11-05T18:28:12 EET" duration-ms="340" status="PASS">
+        <test-method signature="successGetOneStateResponse()[pri:0, instance:scenarios.StateObjectValidate@6ed3ccb2]" started-at="2018-11-06T13:46:50 EET" name="successGetOneStateResponse" finished-at="2018-11-06T13:46:50 EET" duration-ms="283" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- successGetOneStateResponse -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:scenarios.StateObjectValidate@489115ef]" started-at="2018-11-05T18:28:12 EET" name="setUp" finished-at="2018-11-05T18:28:12 EET" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:scenarios.StateObjectValidate@6ed3ccb2]" started-at="2018-11-06T13:46:50 EET" name="setUp" finished-at="2018-11-06T13:46:50 EET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="test()[pri:0, instance:scenarios.StateObjectValidate@489115ef]" started-at="2018-11-05T18:28:12 EET" name="test" finished-at="2018-11-05T18:28:12 EET" duration-ms="383" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
       </class> <!-- scenarios.StateObjectValidate -->
       <class name="scenarios.CountryObjectValidate">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:scenarios.CountryObjectValidate@15de0b3c]" started-at="2018-11-05T18:28:06 EET" name="setUp" finished-at="2018-11-05T18:28:07 EET" duration-ms="233" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:scenarios.CountryObjectValidate@74e52ef6]" started-at="2018-11-06T13:46:46 EET" name="setUp" finished-at="2018-11-06T13:46:46 EET" duration-ms="226" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="getCountriesByAnyFreeFormText()[pri:0, instance:scenarios.CountryObjectValidate@15de0b3c]" started-at="2018-11-05T18:28:07 EET" name="getCountriesByAnyFreeFormText" finished-at="2018-11-05T18:28:08 EET" duration-ms="917" status="PASS">
+        <test-method signature="getCountriesByAnyFreeFormText()[pri:0, instance:scenarios.CountryObjectValidate@74e52ef6]" started-at="2018-11-06T13:46:46 EET" name="getCountriesByAnyFreeFormText" finished-at="2018-11-06T13:46:47 EET" duration-ms="859" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getCountriesByAnyFreeFormText -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:scenarios.CountryObjectValidate@15de0b3c]" started-at="2018-11-05T18:28:08 EET" name="setUp" finished-at="2018-11-05T18:28:08 EET" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:scenarios.CountryObjectValidate@74e52ef6]" started-at="2018-11-06T13:46:47 EET" name="setUp" finished-at="2018-11-06T13:46:47 EET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="getCountryByThreeCharISO()[pri:0, instance:scenarios.CountryObjectValidate@15de0b3c]" started-at="2018-11-05T18:28:08 EET" name="getCountryByThreeCharISO" finished-at="2018-11-05T18:28:08 EET" duration-ms="326" status="PASS">
+        <test-method signature="getCountryByThreeCharISO()[pri:0, instance:scenarios.CountryObjectValidate@74e52ef6]" started-at="2018-11-06T13:46:47 EET" name="getCountryByThreeCharISO" finished-at="2018-11-06T13:46:47 EET" duration-ms="308" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getCountryByThreeCharISO -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:scenarios.CountryObjectValidate@15de0b3c]" started-at="2018-11-05T18:28:08 EET" name="setUp" finished-at="2018-11-05T18:28:08 EET" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="getCountryByTwoCharISO()[pri:0, instance:scenarios.CountryObjectValidate@15de0b3c]" started-at="2018-11-05T18:28:08 EET" name="getCountryByTwoCharISO" finished-at="2018-11-05T18:28:08 EET" duration-ms="375" status="PASS">
+        <test-method signature="getCountryByTwoCharISO()[pri:0, instance:scenarios.CountryObjectValidate@74e52ef6]" started-at="2018-11-06T13:46:47 EET" name="getCountryByTwoCharISO" finished-at="2018-11-06T13:46:47 EET" duration-ms="287" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getCountryByTwoCharISO -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:scenarios.CountryObjectValidate@15de0b3c]" started-at="2018-11-05T18:28:08 EET" name="setUp" finished-at="2018-11-05T18:28:08 EET" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:scenarios.CountryObjectValidate@74e52ef6]" started-at="2018-11-06T13:46:47 EET" name="setUp" finished-at="2018-11-06T13:46:47 EET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="getNothingMatchingFoundByAnyFreeFormText()[pri:0, instance:scenarios.CountryObjectValidate@15de0b3c]" started-at="2018-11-05T18:28:08 EET" name="getNothingMatchingFoundByAnyFreeFormText" finished-at="2018-11-05T18:28:09 EET" duration-ms="348" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:scenarios.CountryObjectValidate@74e52ef6]" started-at="2018-11-06T13:46:47 EET" name="setUp" finished-at="2018-11-06T13:46:47 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="getNothingMatchingFoundByAnyFreeFormText()[pri:0, instance:scenarios.CountryObjectValidate@74e52ef6]" started-at="2018-11-06T13:46:47 EET" name="getNothingMatchingFoundByAnyFreeFormText" finished-at="2018-11-06T13:46:48 EET" duration-ms="322" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getNothingMatchingFoundByAnyFreeFormText -->
-        <test-method signature="getNothingMatchingFoundByThreeCharISO()[pri:0, instance:scenarios.CountryObjectValidate@15de0b3c]" started-at="2018-11-05T18:28:09 EET" name="getNothingMatchingFoundByThreeCharISO" finished-at="2018-11-05T18:28:09 EET" duration-ms="323" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:scenarios.CountryObjectValidate@74e52ef6]" started-at="2018-11-06T13:46:48 EET" name="setUp" finished-at="2018-11-06T13:46:48 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="getNothingMatchingFoundByThreeCharISO()[pri:0, instance:scenarios.CountryObjectValidate@74e52ef6]" started-at="2018-11-06T13:46:48 EET" name="getNothingMatchingFoundByThreeCharISO" finished-at="2018-11-06T13:46:48 EET" duration-ms="307" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getNothingMatchingFoundByThreeCharISO -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:scenarios.CountryObjectValidate@15de0b3c]" started-at="2018-11-05T18:28:09 EET" name="setUp" finished-at="2018-11-05T18:28:09 EET" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="getNothingMatchingFoundByTwoCharISO()[pri:0, instance:scenarios.CountryObjectValidate@15de0b3c]" started-at="2018-11-05T18:28:09 EET" name="getNothingMatchingFoundByTwoCharISO" finished-at="2018-11-05T18:28:09 EET" duration-ms="344" status="PASS">
+        <test-method signature="getNothingMatchingFoundByTwoCharISO()[pri:0, instance:scenarios.CountryObjectValidate@74e52ef6]" started-at="2018-11-06T13:46:48 EET" name="getNothingMatchingFoundByTwoCharISO" finished-at="2018-11-06T13:46:48 EET" duration-ms="326" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getNothingMatchingFoundByTwoCharISO -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:scenarios.CountryObjectValidate@15de0b3c]" started-at="2018-11-05T18:28:09 EET" name="setUp" finished-at="2018-11-05T18:28:09 EET" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:scenarios.CountryObjectValidate@74e52ef6]" started-at="2018-11-06T13:46:48 EET" name="setUp" finished-at="2018-11-06T13:46:48 EET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="successGetAllCountriesList()[pri:0, instance:scenarios.CountryObjectValidate@15de0b3c]" started-at="2018-11-05T18:28:09 EET" name="successGetAllCountriesList" finished-at="2018-11-05T18:28:10 EET" duration-ms="583" status="PASS">
+        <test-method signature="successGetAllCountriesList()[pri:0, instance:scenarios.CountryObjectValidate@74e52ef6]" started-at="2018-11-06T13:46:48 EET" name="successGetAllCountriesList" finished-at="2018-11-06T13:46:49 EET" duration-ms="480" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- successGetAllCountriesList -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:scenarios.CountryObjectValidate@15de0b3c]" started-at="2018-11-05T18:28:09 EET" name="setUp" finished-at="2018-11-05T18:28:09 EET" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:scenarios.CountryObjectValidate@74e52ef6]" started-at="2018-11-06T13:46:48 EET" name="setUp" finished-at="2018-11-06T13:46:48 EET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
