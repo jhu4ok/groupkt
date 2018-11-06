@@ -14,6 +14,7 @@ public class PropertiesUtil {
 
         try {
             String propertyFileName = "\\src\\main\\resources\\env.properties";
+//            String propertyFileName = "env.properties";
             FileInputStream file = new FileInputStream(System.getProperty("user.dir") + propertyFileName);
             if (file != null) {
                 prop.load(file);

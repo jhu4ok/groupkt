@@ -7,6 +7,10 @@
     <groupId>POCTestingFramework</groupId>
     <artifactId>TestingFramework</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <!--<properties>-->
+    <!--<host.state>http://services.groupkt.com/state</host.state>-->
+    <!--</properties>-->
     <dependencies>
 
         <dependency>

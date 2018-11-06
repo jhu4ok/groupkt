@@ -1,18 +1,13 @@
-package dto;
+package dto.stateservisedto;
+
 
 import lombok.Getter;
 import lombok.Setter;
 
 
-import java.util.List;
-
 @Getter
 @Setter
-public class StateResponseDTO  {
-
-    private StateResponseDTO RestResponse;
-    private List<String> messages;
-    private StateResponseDTO result;
+public class StateDTO  {
     private int id;
     private String country;
     private String name;
@@ -21,3 +16,9 @@ public class StateResponseDTO  {
     private String largest_city;
     private String capital;
 }
+
+
+
+
+
+
