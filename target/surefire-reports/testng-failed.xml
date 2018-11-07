@@ -23,6 +23,9 @@
           <include name="successGetOneStateResponse"/>
           <include name="setUp"/>
           <include name="getNothingStateByAnyFreeFormText"/>
+          <include name="getStateByAnyFreeFormText"/>
+          <include name="getNothingMatchingFound"/>
+          <include name="successGetAllStatesResponse"/>
         </methods>
       </class> <!-- scenarios.StateObjectValidate -->
     </classes>

@@ -1,5 +1,7 @@
 package util;
 
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.Properties;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -8,7 +10,7 @@ import java.io.FileNotFoundException;
 public class PropertiesUtil {
 
 
-    public static String getProp(String propertyName) {
+    public static String getProp(String propertyName){
 
         Properties prop = new Properties();
 
@@ -24,9 +26,11 @@ public class PropertiesUtil {
         } catch (Exception e) {
             System.out.println("Exception: " + e);
         }
-        return prop.get(propertyName).toString();
-    }
 
+
+        return prop.getProperty(propertyName);
+
+    }
 }
 
 

@@ -10,8 +10,5 @@ public class MainAssertions {
 
         int actualStatusCode = response.statusCode();
         Assert.assertEquals(actualStatusCode, expectedStatusCode, "Incorrect Status Code");
-
     }
-
-
 }

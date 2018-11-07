@@ -6,6 +6,4 @@ public class UrlConverter {
         String[] uriReq = PropertiesUtil.getProp(url).split("/");
         return uriReq;
     }
-
-
 }

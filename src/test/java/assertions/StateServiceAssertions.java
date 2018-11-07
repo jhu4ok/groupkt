@@ -12,13 +12,22 @@ import java.util.List;
 
 public class StateServiceAssertions extends MainAssertions {
 
+    public static final String MESSAGE_SUCCESS_STATE = "State found matching code TEXT.";
+    public static final String MESSAGE_SUCCESS_LIST = "Total TEXT records found.";
+    public static final String MESSAGE_NOTHING = "No matching state found for requested code TEXT.";
 
-    public static void assertResponseContainsListOfAllStates(String expectedCount, StateResponseDTO stateResponseDTO) {
-        Assert.assertEquals(Integer.parseInt(PropertiesUtil.getProp(expectedCount)),
-                stateResponseDTO.getRestResponse().getResult().size(), "Incorrect States Count");
+    public static final int NOTHING = 0;
+    public static final int USA_STATES_COUNT = 55;
+    public static final int COUNT_WA_STATES = 4;
+
+
+    public static void assertResponseContainsListOfAllStates(int expectedCount, StateResponseDTO stateResponseDTO) {
+
+        Assert.assertEquals(expectedCount, stateResponseDTO.getRestResponse().getResult().size(), "Incorrect States Count");
     }
 
     public void assertResponseContainsCorrectStateInfo(String expectedInfo, StateResponseDTO stateResponseDTO) {
+
         String[] uriReq = UrlConverter.splitResource(expectedInfo);
         String country = uriReq[2];
         String abbr = uriReq[3];
@@ -30,37 +39,26 @@ public class StateServiceAssertions extends MainAssertions {
 
     }
 
-    public static void assertResponseMessageForStatesList(String expectedMessage, StateResponseDTO resultResponse, String resourceUrl, String value) {
+    public static void assertResponseMessage(String expectedMessage, StateResponseDTO resultResponse, String resourceUrl, String value) {
 
         List<String> expectedMessageBuild;
 
-        if (resultResponse.getRestResponse().getResult().size() > 0) {
-            expectedMessageBuild = Arrays.asList(PropertiesUtil.
-                    getProp(expectedMessage).replaceAll("TEXT", "[" + resultResponse.getRestResponse().getResult().size() + "]"));
-            System.out.println(expectedMessageBuild);
+        if (resultResponse.getRestResponse().getResult() != null && resultResponse.getRestResponse().getResult().size() > 1) {
+            expectedMessageBuild = Arrays.asList(expectedMessage.replaceAll("TEXT", "[" + resultResponse.getRestResponse().getResult().size() + "]"));
+        } else if (resultResponse.getRestResponse().getResult() != null && resultResponse.getRestResponse().getResult().size() == 1) {
+            expectedMessageBuild = Arrays.asList(expectedMessage.
+                    replaceAll("TEXT", "[" + resultResponse.getRestResponse().getResult().get(0).getAbbr() + "]"));
+        } else if (resultResponse.getRestResponse().getResult() == null) {
+            String[] uriReq = UrlConverter.splitResource(resourceUrl);
+            expectedMessageBuild = Arrays.asList(expectedMessage.replaceAll("TEXT", "[" + uriReq[2] + "->" + uriReq[3] + "]"));
+
         } else {
             String[] invalidURL = UrlConverter.splitResource(resourceUrl);
-            expectedMessageBuild = Arrays.asList(PropertiesUtil
-                    .getProp(expectedMessage).replaceAll("TEXT", "[" + invalidURL[2] + "->" + PropertiesUtil.getProp(value) + "]"));
+            expectedMessageBuild = Arrays.asList(expectedMessage.replaceAll("TEXT", "[" + invalidURL[2] + "->" + PropertiesUtil.getProp(value) + "]"));
+
         }
 
         Assert.assertEquals(expectedMessageBuild, resultResponse.getRestResponse().getMessages(), "Incorrect States List Response Message");
-    }
-
-    public void assertResponseMessageForState(String expectedMessage, StateResponseDTO stateResponseDTO, String resourseURL) {
-
-        List<String> expectedMessageBuild;
-
-        if (stateResponseDTO.getRestResponse().getResult() != null) {
-            expectedMessageBuild = Arrays.asList(PropertiesUtil.getProp(expectedMessage).
-                    replaceAll("TEXT", "[" + stateResponseDTO.getRestResponse().getResult().get(0).getAbbr() + "]"));
-
-        } else {
-            String[] uriReq = UrlConverter.splitResource(resourseURL);
-            expectedMessageBuild = Arrays.asList(PropertiesUtil
-                    .getProp(expectedMessage).replaceAll("TEXT", "[" + uriReq[2] + "->" + uriReq[3] + "]"));
-        }
-        Assert.assertEquals(expectedMessageBuild, stateResponseDTO.getRestResponse().getMessages(), "Incorrect States List Response Message");
     }
 }
 
