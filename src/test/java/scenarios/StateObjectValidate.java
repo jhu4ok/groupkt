@@ -11,9 +11,6 @@ import org.testng.annotations.Test;
 
 import steps.StepsForStateService;
 
-import java.io.IOException;
-import java.net.URISyntaxException;
-
 
 public class StateObjectValidate {
 
@@ -22,7 +19,7 @@ public class StateObjectValidate {
 
 
     @BeforeMethod
-    public void setUp() throws URISyntaxException, IOException {
+    public void setUp() {
 
         step.initialiseBaseURI("HOST_STATE");
 
@@ -35,7 +32,7 @@ public class StateObjectValidate {
         Response getResponse = step.sendGetRequest("ALL_STATES_RESOURCE");
         StateResponseDTO stateResponse = step.convertResponseToStateObject(getResponse);
 
-        step.basicResponseAssertion(getResponse, StateServiceAssertions.MESSAGE_SUCCESS_LIST, stateResponse, "", "");
+        step.basicResponseAssertion(getResponse, StateServiceAssertions.MESSAGE_SUCCESS_LIST, stateResponse, null, null);
         assertion.assertResponseContainsListOfAllStates(StateServiceAssertions.USA_STATES_COUNT, stateResponse);
     }
 
@@ -46,7 +43,7 @@ public class StateObjectValidate {
         Response getResponse = step.sendGetRequest("ONE_STATE_RESOURCE");
         StateResponseDTO stateResponse = step.convertResponseToStateObject(getResponse);
 
-        step.basicResponseAssertion(getResponse, StateServiceAssertions.MESSAGE_SUCCESS_STATE, stateResponse, "USA_STATES_COUNT", "");
+        step.basicResponseAssertion(getResponse, StateServiceAssertions.MESSAGE_SUCCESS_STATE, stateResponse, "USA_STATES_COUNT", null);
         assertion.assertResponseContainsCorrectStateInfo("ONE_STATE_RESOURCE", stateResponse);
     }
 
@@ -57,7 +54,7 @@ public class StateObjectValidate {
         Response getResponse = step.sendGetRequest("INVALID_STATE_RESOURCE");
         StateResponseDTO stateResponse = step.convertResponseToStateObject(getResponse);
 
-        step.basicResponseAssertion(getResponse, StateServiceAssertions.MESSAGE_NOTHING, stateResponse, "INVALID_STATE_RESOURCE", "");
+        step.basicResponseAssertion(getResponse, StateServiceAssertions.MESSAGE_NOTHING, stateResponse, "INVALID_STATE_RESOURCE", null);
     }
 
 

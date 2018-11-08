@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 public class ReportUtil implements IReporter {
+
     public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites,
                                String outputDirectory) {
         for ( ISuite suite : suites ) {
