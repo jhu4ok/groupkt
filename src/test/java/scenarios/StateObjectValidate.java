@@ -2,14 +2,11 @@ package scenarios;
 
 import assertions.StateServiceAssertions;
 import dto.stateservisedto.StateResponseDTO;
-
-
 import io.restassured.response.Response;
-
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import steps.StepsForStateService;
+import transfer.Context;
 
 
 public class StateObjectValidate {
@@ -25,7 +22,6 @@ public class StateObjectValidate {
 
     }
 
-
     @Test
     public void successGetAllStatesResponse() {
 
@@ -36,6 +32,11 @@ public class StateObjectValidate {
         assertion.assertResponseContainsListOfAllStates(StateServiceAssertions.USA_STATES_COUNT, stateResponse);
     }
 
+    @Test
+    public void successGetOneStateResponseNewVersion() {
+        Context<StateResponseDTO> context = step.getStateByName("AK");
+        assertion.assertResponseContainsCorrectStateInfo("ONE_STATE_RESOURCE", context.getObjectFromResponse());
+    }
 
     @Test
     public void successGetOneStateResponse() {
