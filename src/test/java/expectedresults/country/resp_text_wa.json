@@ -1,0 +1,34 @@
+{
+  "RestResponse" : {
+    "messages" : [ "Total [7] records found." ],
+    "result" : [ {
+      "name" : "Botswana",
+      "alpha2_code" : "BW",
+      "alpha3_code" : "BWA"
+    }, {
+      "name" : "Kuwait",
+      "alpha2_code" : "KW",
+      "alpha3_code" : "KWT"
+    }, {
+      "name" : "Norway",
+      "alpha2_code" : "NO",
+      "alpha3_code" : "NOR"
+    }, {
+      "name" : "Rwanda",
+      "alpha2_code" : "RW",
+      "alpha3_code" : "RWA"
+    }, {
+      "name" : "Swaziland",
+      "alpha2_code" : "SZ",
+      "alpha3_code" : "SWZ"
+    }, {
+      "name" : "Taiwan, Province of China [a]",
+      "alpha2_code" : "TW",
+      "alpha3_code" : "TWN"
+    }, {
+      "name" : "Wallis and Futuna",
+      "alpha2_code" : "WF",
+      "alpha3_code" : "WLF"
+    } ]
+  }
+}

@@ -1,95 +1,65 @@
 package scenarios;
 
-import assertions.CountryServiceAssertions;
-
 
 import dto.countryservisedto.CountryResponseDTO;
-import io.restassured.response.Response;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import steps.StepsForCountryService;
+import transfer.Context;
 
 
 public class CountryObjectValidate {
 
-    CountryServiceAssertions assertion = new CountryServiceAssertions();
-    StepsForCountryService step = new StepsForCountryService();
-
-
-    @BeforeMethod
-    public void setUp() {
-
-        step.initialiseBaseURI("HOST_COUNTRY");
-    }
-
+    private final StepsForCountryService step = new StepsForCountryService();
 
 
     @Test
     public void successGetAllCountriesList() {
 
-        Response getResponse = step.sendGetRequest("ALL_COUNTRIES_RESOURCE");
-        CountryResponseDTO countryResponseDTO = step.convertResponseToCountryObject(getResponse);
-
-        step.basicResponseAssertion(getResponse, CountryServiceAssertions.MESSAGE_SUCCESS_LIST, countryResponseDTO, "ALL_COUNTRIES_RESOURCE", null);
-        assertion.assertResponseContainsListOfAllCountries(CountryServiceAssertions.ALL_COUNTRIES_COUNT, countryResponseDTO);
+        Context<CountryResponseDTO> context = step.getAll();
+        step.responseValidation(context, "src/test/java/expectedresults/country/resp_get_all.json");
     }
 
     @Test
-    public void getCountryByTwoCharISO() {
+    public void getCountryByIso2Code() {
 
-        Response getResponse = step.sendGetRequest("ISO2CODE_RESOURCE");
-        CountryResponseDTO countryResponseDTO = step.convertResponseToCountryObject(getResponse);
-
-        step.basicResponseAssertion(getResponse, CountryServiceAssertions.MESSAGE_SUCCESS_COUNTRY, countryResponseDTO, "ISO2CODE_RESOURCE", null);
-        assertion.assertResponseContainsCorrectCountryInfo("ISO2CODE_RESOURCE", countryResponseDTO);
+        Context<CountryResponseDTO> context = step.getCountryByIso2Code("UA");
+        step.responseValidation(context, "src/test/java/expectedresults/country/resp_iso2_ua.json");
     }
 
     @Test
-    public void getNothingMatchingFoundByTwoCharISO() {
+    public void getNothingByIso2Code() {
 
-        Response getResponse = step.sendGetRequest("ISO2CODE_INVALID_RESOURCE");
-        CountryResponseDTO countryResponseDTO = step.convertResponseToCountryObject(getResponse);
-
-        step.basicResponseAssertion(getResponse, CountryServiceAssertions.MESSAGE_NOTHING, countryResponseDTO, "ISO2CODE_INVALID_RESOURCE", null);
+        Context<CountryResponseDTO> context = step.getCountryByIso2Code("UJ");
+        step.responseValidation(context, "src/test/java/expectedresults/country/resp_iso2_uj.json");
     }
 
     @Test
-    public void getCountryByThreeCharISO() {
+    public void getCountryByIso3Code() {
 
-        Response getResponse = step.sendGetRequest("ISO3CODE_RESOURCE");
-        CountryResponseDTO countryResponseDTO = step.convertResponseToCountryObject(getResponse);
-
-        step.basicResponseAssertion(getResponse, CountryServiceAssertions.MESSAGE_SUCCESS_COUNTRY, countryResponseDTO, "ISO3CODE_RESOURCE", null);
-        assertion.assertResponseContainsCorrectCountryInfo("ISO3CODE_RESOURCE", countryResponseDTO);
+        Context<CountryResponseDTO> context = step.getCountryByIso3Code("UKR");
+        step.responseValidation(context, "src/test/java/expectedresults/country/resp_iso3_ua.json");
     }
 
     @Test
-    public void getNothingMatchingFoundByThreeCharISO() {
+    public void getNothingByIso3Code() {
 
-        Response getResponse = step.sendGetRequest("ISO3CODE_INVALID_RESOURCE");
-        CountryResponseDTO countryResponseDTO = step.convertResponseToCountryObject(getResponse);
+        Context<CountryResponseDTO> context = step.getCountryByIso3Code("UKJ");
+        step.responseValidation(context, "src/test/java/expectedresults/country/resp_iso3_ukj.json");
 
-        step.basicResponseAssertion(getResponse, CountryServiceAssertions.MESSAGE_NOTHING, countryResponseDTO, "ISO3CODE_INVALID_RESOURCE", null);
     }
 
     @Test
     public void getCountriesByAnyFreeFormText() {
 
-        Response getResponse = step.sendGetWithText("KEY_TEXT", "TEXT", "SEARCH_COUNTRY_RESOURCE");
-        CountryResponseDTO countryResponseDTO = step.convertResponseToCountryObject(getResponse);
-
-        step.basicResponseAssertion(getResponse, CountryServiceAssertions.MESSAGE_SUCCESS_LIST, countryResponseDTO, "SEARCH_COUNTRY_RESOURCE", "TEXT");
-        assertion.assertResponseContainsListOfAllCountries(CountryServiceAssertions.COUNT_WA_COUNTRIES, countryResponseDTO);
+        Context<CountryResponseDTO> context = step.getStateByText("wa");
+        step.responseValidation(context, "src/test/java/expectedresults/country/resp_text_wa.json");
     }
 
     @Test
     public void getNothingMatchingFoundByAnyFreeFormText() {
 
-        Response getResponse = step.sendGetWithText("KEY_TEXT", "INVALID_TEXT", "SEARCH_COUNTRY_RESOURCE");
-        CountryResponseDTO countryResponseDTO = step.convertResponseToCountryObject(getResponse);
-
-        step.basicResponseAssertion(getResponse, CountryServiceAssertions.MESSAGE_NOTHING, countryResponseDTO, "SEARCH_COUNTRY_RESOURCE", "INVALID_TEXT");
-        assertion.assertResponseContainsListOfAllCountries(CountryServiceAssertions.NOTHING, countryResponseDTO);
+        Context<CountryResponseDTO> context = step.getStateByText("wj");
+        step.responseValidation(context, "src/test/java/expectedresults/country/resp_text_wj.json");
     }
 
 }

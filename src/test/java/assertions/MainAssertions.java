@@ -1,14 +1,13 @@
 package assertions;
 
-import io.restassured.response.Response;
-import org.testng.Assert;
+        import io.restassured.response.Response;
+        import org.testng.Assert;
 
 
 public class MainAssertions {
 
-    public static void assertStatusCode(Response response, int expectedStatusCode) {
-
-        int actualStatusCode = response.statusCode();
-        Assert.assertEquals(actualStatusCode, expectedStatusCode, "Incorrect Status Code");
+    public static void assertStatusCode(int actualStatCode, int expectedStatCode) {
+        Assert.assertEquals(actualStatCode, expectedStatCode, "Incorrect Status Code");
     }
+
 }
