@@ -1,7 +1,6 @@
 package transfer;
 
 import lombok.Getter;
-import transfer.BaseTransfer;
 import transfer.routers.country.ByIsoCode;
 import transfer.routers.country.GetAll;
 import transfer.routers.country.ByText;

@@ -1,14 +1,13 @@
-package transfer;
+package util;
 
 import com.google.gson.GsonBuilder;
 import lombok.AllArgsConstructor;
-import util.ArrayAdapterFactoryUtil;
 
 
 import java.io.BufferedReader;
 
 @AllArgsConstructor
-public class ExpectedObjectFromFile<T> {
+public class GetObjectFromJsonUtil<T> {
 
     BufferedReader reader;
     private Class<T> cls;

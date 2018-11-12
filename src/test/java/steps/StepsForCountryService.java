@@ -7,7 +7,11 @@ import org.apache.http.HttpStatus;
 import transfer.Api;
 import transfer.Context;
 
+import util.GetObjectFromJsonUtil;
 import transfer.routers.country.*;
+import util.FileReaderUtil;
+
+import java.io.BufferedReader;
 
 
 public class StepsForCountryService {
@@ -15,12 +19,11 @@ public class StepsForCountryService {
     private final ByIsoCode searchByIsoCode = new Api().getCountry().getByIso3Code();
     private final ByText searchByText = new Api().getCountry().getByText();
     private final GetAll searchAll = new Api().getCountry().getGetAll();
-    private final FromFile expectedResult = new FromFile();
 
     public void responseValidation(Context<CountryResponseDTO> context, String expectedResult) {
 
         CountryServiceAssertions.assertStatusCode(context.getResponseStatusCode(), HttpStatus.SC_OK);
-        CountryServiceAssertions.assertObjectMessage(context.getObjectFromResponse(), this.expectedResult.get(expectedResult).getObjectFromFile());
+        CountryServiceAssertions.assertObjectMessage(context.getObjectFromResponse(), getExpectedResult(expectedResult).getObjectFromFile());
     }
 
     public Context<CountryResponseDTO> getCountryByIsoCode(String code, String alphaCode) {
@@ -33,5 +36,10 @@ public class StepsForCountryService {
 
     public Context<CountryResponseDTO> getAll() {
         return searchAll.get();
+    }
+
+    private GetObjectFromJsonUtil<CountryResponseDTO> getExpectedResult(String filePath) {
+        BufferedReader reader = FileReaderUtil.readFile(filePath);
+        return new GetObjectFromJsonUtil<>(reader, CountryResponseDTO.class);
     }
 }

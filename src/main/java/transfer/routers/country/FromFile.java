@@ -1,7 +1,7 @@
 package transfer.routers.country;
 
 import dto.countryservisedto.CountryResponseDTO;
-import transfer.ExpectedObjectFromFile;
+import util.GetObjectFromJsonUtil;
 import util.FileReaderUtil;
 
 import java.io.BufferedReader;
@@ -9,9 +9,9 @@ import java.io.BufferedReader;
 
 public class FromFile {
 
-    public ExpectedObjectFromFile<CountryResponseDTO> get(String filePath) {
+    public GetObjectFromJsonUtil<CountryResponseDTO> get(String filePath) {
         BufferedReader reader = FileReaderUtil.readFile(filePath);
-        return new ExpectedObjectFromFile<>(reader, CountryResponseDTO.class);
+        return new GetObjectFromJsonUtil<>(reader, CountryResponseDTO.class);
     }
 
 

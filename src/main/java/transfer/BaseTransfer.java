@@ -24,6 +24,8 @@ public class BaseTransfer {
     }
 
     public Response get(String path, String param1, String param2) {
-        return given().pathParam("param1", param1).pathParam("param2", param2).spec(reqSpec.getBaseReqSpec()).when().get(path);
+        return given().
+                pathParams("param1", param1, "param2", param2).
+                spec(reqSpec.getBaseReqSpec()).when().get(path);
     }
 }
