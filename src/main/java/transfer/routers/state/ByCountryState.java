@@ -1,14 +1,14 @@
-package transfer.statetrans.routers.state;
+package transfer.routers.state;
 
 import dto.stateservisedto.StateResponseDTO;
 import io.restassured.response.Response;
-import transfer.statetrans.StateTransfer;
+import transfer.BaseTransfer;
 import transfer.Context;
 
 public class ByCountryState {
 
-    private static final String ROUT = "/get/{country}/{state}";
-    private final StateTransfer baseTransfer = new StateTransfer();
+    private static final String ROUT = "/get/{param1}/{param2}";
+    private final BaseTransfer baseTransfer = new BaseTransfer();
     private final String path;
 
     public ByCountryState(String parentRout) {
@@ -16,7 +16,7 @@ public class ByCountryState {
     }
 
     public Context<StateResponseDTO> get(String country, String state) {
-        Response response = baseTransfer.getByCountryState(path, country, state);
+        Response response = baseTransfer.get(path, country, state);
         return new Context<>(response, StateResponseDTO.class);
     }
 

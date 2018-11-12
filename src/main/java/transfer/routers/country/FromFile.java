@@ -1,4 +1,4 @@
-package transfer.countrytrans.routers.country;
+package transfer.routers.country;
 
 import dto.countryservisedto.CountryResponseDTO;
 import transfer.ExpectedObjectFromFile;

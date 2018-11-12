@@ -1,4 +1,4 @@
-package transfer.statetrans.routers.state;
+package transfer.routers.state;
 
 import dto.stateservisedto.StateResponseDTO;
 import transfer.ExpectedObjectFromFile;

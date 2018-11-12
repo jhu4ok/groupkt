@@ -1,13 +1,15 @@
-package transfer.countrytrans;
+package transfer;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
-import transfer.countrytrans.routers.Country;
 
 @Getter
 @EqualsAndHashCode
 @ToString
-public class CountryApi {
+public class Api {
+
+    private State state = new State("");
     private Country country = new Country("");
+
 }

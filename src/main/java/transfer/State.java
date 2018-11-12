@@ -1,13 +1,11 @@
-package transfer.statetrans.routers;
+package transfer;
 
 import lombok.Getter;
-import transfer.statetrans.StateTransfer;
-import transfer.statetrans.routers.state.ByCountryState;
-import transfer.statetrans.routers.state.ByText;
+import transfer.routers.state.ByCountryState;
+import transfer.routers.state.ByText;
 
 public class State {
     private static final String ROUT = "/state";
-    private final StateTransfer baseTransfer = new StateTransfer();
     private final String path;
 
     @Getter

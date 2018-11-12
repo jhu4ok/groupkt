@@ -1,22 +1,22 @@
-package transfer.countrytrans.routers.country;
+package transfer.routers.country;
 
 import dto.countryservisedto.CountryResponseDTO;
 import io.restassured.response.Response;
+import transfer.BaseTransfer;
 import transfer.Context;
-import transfer.countrytrans.CountryTransfer;
 
 
 public class ByText {
-    private static final String ROUT = "/search?text={text}";
-    private final CountryTransfer countryTransfer = new CountryTransfer();
+    private static final String ROUT = "/search?text={param}";
+    private final BaseTransfer countryTransfer = new BaseTransfer();
     private final String path;
 
-    public ByText (String parentRout) {
+    public ByText(String parentRout) {
         this.path = parentRout + ROUT;
     }
 
     public Context<CountryResponseDTO> get(String text) {
-        Response response = countryTransfer.getByText(path, text);
+        Response response = countryTransfer.get(path, text);
         return new Context<>(response, CountryResponseDTO.class);
     }
 }

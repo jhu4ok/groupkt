@@ -2,7 +2,10 @@ package transfer;
 
 import io.restassured.RestAssured;
 import io.restassured.parsing.Parser;
+import io.restassured.response.Response;
 import transfer.req_spec.ReqSpec;
+
+import static io.restassured.RestAssured.given;
 
 public class BaseTransfer {
 
@@ -12,4 +15,15 @@ public class BaseTransfer {
         RestAssured.defaultParser = Parser.JSON;
     }
 
+    public Response get(String path) {
+        return given().spec(reqSpec.getBaseReqSpec()).when().get(path);
+    }
+
+    public Response get(String path, String param) {
+        return given().pathParam("param", param).spec(reqSpec.getBaseReqSpec()).when().get(path);
+    }
+
+    public Response get(String path, String param1, String param2) {
+        return given().pathParam("param1", param1).pathParam("param2", param2).spec(reqSpec.getBaseReqSpec()).when().get(path);
+    }
 }

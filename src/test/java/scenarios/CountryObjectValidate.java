@@ -20,30 +20,30 @@ public class CountryObjectValidate {
     }
 
     @Test(dataProvider = "iso2Search")
-    public void getCountryByIso2Code(String country, String expectedResult) {
+    public void getCountryByIso2Code(String code,String country, String expectedResult) {
 
-        Context<CountryResponseDTO> context = step.getCountryByIso2Code(country);
+        Context<CountryResponseDTO> context = step.getCountryByIsoCode(code,country);
         step.responseValidation(context, expectedResult);
     }
 
     @Test(dataProvider = "iso2SearchNothing")
-    public void getNothingByIso2Code(String country, String expectedResult) {
+    public void getNothingByIso2Code(String code,String country, String expectedResult) {
 
-        Context<CountryResponseDTO> context = step.getCountryByIso2Code(country);
+        Context<CountryResponseDTO> context = step.getCountryByIsoCode(code, country);
         step.responseValidation(context, expectedResult);
     }
 
     @Test(dataProvider = "iso3Search")
-    public void getCountryByIso3Code(String country, String expectedResult) {
+    public void getCountryByIso3Code(String code,String country, String expectedResult) {
 
-        Context<CountryResponseDTO> context = step.getCountryByIso3Code(country);
+        Context<CountryResponseDTO> context = step.getCountryByIsoCode(code,country);
         step.responseValidation(context, expectedResult);
     }
 
     @Test(dataProvider = "iso3SearchNothing")
-    public void getNothingByIso3Code(String country, String expectedResult) {
+    public void getNothingByIso3Code(String code, String country, String expectedResult) {
 
-        Context<CountryResponseDTO> context = step.getCountryByIso3Code(country);
+        Context<CountryResponseDTO> context = step.getCountryByIsoCode(code, country);
         step.responseValidation(context, expectedResult);
 
     }
@@ -65,36 +65,36 @@ public class CountryObjectValidate {
     @DataProvider
     public static Object[][] iso2Search() {
         return new Object[][]{
-                {"UA", "src/test/java/expectedresults/country/resp_iso2_ua.json"},
-                {"RU", "src/test/java/expectedresults/country/resp_iso2_ru.json"},
-                {"CZ", "src/test/java/expectedresults/country/resp_iso2_cz.json"}
+                {"iso2code","UA", "src/test/java/expectedresults/country/resp_iso2_ua.json"},
+                {"iso2code","RU", "src/test/java/expectedresults/country/resp_iso2_ru.json"},
+                {"iso2code","CZ", "src/test/java/expectedresults/country/resp_iso2_cz.json"}
         };
     }
 
     @DataProvider
     public static Object[][] iso2SearchNothing() {
         return new Object[][]{
-                {"UJ", "src/test/java/expectedresults/country/resp_iso2_uj.json"},
-                {"fg", "src/test/java/expectedresults/country/resp_iso2_fg.json"},
-                {"USA", "src/test/java/expectedresults/country/resp_iso2_USA.json"}
+                {"iso2code", "UJ", "src/test/java/expectedresults/country/resp_iso2_uj.json"},
+                {"iso2code", "fg", "src/test/java/expectedresults/country/resp_iso2_fg.json"},
+                {"iso2code","USA", "src/test/java/expectedresults/country/resp_iso2_USA.json"}
         };
     }
 
     @DataProvider
     public static Object[][] iso3Search() {
         return new Object[][]{
-                {"UKR", "src/test/java/expectedresults/country/resp_iso3_ua.json"},
-                {"USA", "src/test/java/expectedresults/country/resp_iso3_usa.json"},
-                {"ESP", "src/test/java/expectedresults/country/resp_iso3_esp.json"}
+                {"iso3code","UKR", "src/test/java/expectedresults/country/resp_iso3_ua.json"},
+                {"iso3code","USA", "src/test/java/expectedresults/country/resp_iso3_usa.json"},
+                {"iso3code","ESP", "src/test/java/expectedresults/country/resp_iso3_esp.json"}
         };
     }
 
     @DataProvider
     public static Object[][] iso3SearchNothing() {
         return new Object[][]{
-                {"UKJ", "src/test/java/expectedresults/country/resp_iso3_ukj.json"},
-                {"ECP", "src/test/java/expectedresults/country/resp_iso3_ecp.json"},
-                {"US", "src/test/java/expectedresults/country/resp_iso3_US.json"}
+                {"iso3code", "UKJ", "src/test/java/expectedresults/country/resp_iso3_ukj.json"},
+                {"iso3code", "ECP", "src/test/java/expectedresults/country/resp_iso3_ecp.json"},
+                {"iso3code","US", "src/test/java/expectedresults/country/resp_iso3_US.json"}
         };
     }
 
