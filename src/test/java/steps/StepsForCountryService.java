@@ -1,7 +1,5 @@
 package steps;
 
-
-
 import assertions.CountryServiceAssertions;
 import dto.countryservisedto.CountryResponseDTO;
 
@@ -9,9 +7,6 @@ import org.apache.http.HttpStatus;
 import transfer.Context;
 import transfer.countrytrans.CountryApi;
 import transfer.countrytrans.routers.country.*;
-
-
-
 
 
 public class StepsForCountryService {

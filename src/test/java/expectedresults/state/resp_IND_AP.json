@@ -1,0 +1,14 @@
+{
+  "RestResponse" : {
+    "messages" : [ "State found matching code [AP]." ],
+    "result" : {
+      "id" : 56,
+      "country" : "IND",
+      "name" : "Andhra Pradesh",
+      "abbr" : "AP",
+      "area" : "49506799SKM",
+      "largest_city" : "Hyderabad Amaravati",
+      "capital" : "Hyderabad Amaravati"
+    }
+  }
+}

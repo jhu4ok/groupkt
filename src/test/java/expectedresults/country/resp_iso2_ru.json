@@ -1,0 +1,10 @@
+{
+  "RestResponse" : {
+    "messages" : [ "Country found matching code [RU]." ],
+    "result" : {
+      "name" : "Russian Federation",
+      "alpha2_code" : "RU",
+      "alpha3_code" : "RUS"
+    }
+  }
+}

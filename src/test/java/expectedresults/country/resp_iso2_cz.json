@@ -1,0 +1,10 @@
+{
+  "RestResponse" : {
+    "messages" : [ "Country found matching code [CZ]." ],
+    "result" : {
+      "name" : "Czechia",
+      "alpha2_code" : "CZ",
+      "alpha3_code" : "CZE"
+    }
+  }
+}

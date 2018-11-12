@@ -1,0 +1,26 @@
+{
+  "RestResponse" : {
+    "messages" : [ "Total [5] records found." ],
+    "result" : [ {
+      "name" : "Norfolk Island",
+      "alpha2_code" : "NF",
+      "alpha3_code" : "NFK"
+    }, {
+      "name" : "Northern Mariana Islands",
+      "alpha2_code" : "MP",
+      "alpha3_code" : "MNP"
+    }, {
+      "name" : "Norway",
+      "alpha2_code" : "NO",
+      "alpha3_code" : "NOR"
+    }, {
+      "name" : "United Kingdom of Great Britain and Northern Ireland",
+      "alpha2_code" : "GB",
+      "alpha3_code" : "GBR"
+    }, {
+      "name" : "United States Minor Outlying Islands",
+      "alpha2_code" : "UM",
+      "alpha3_code" : "UMI"
+    } ]
+  }
+}

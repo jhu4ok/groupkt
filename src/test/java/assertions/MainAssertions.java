@@ -1,7 +1,6 @@
 package assertions;
 
-        import io.restassured.response.Response;
-        import org.testng.Assert;
+import org.testng.Assert;
 
 
 public class MainAssertions {
