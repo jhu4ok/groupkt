@@ -1,6 +1,5 @@
 package dto.stateservisedto;
 
-
 import lombok.Getter;
 
 

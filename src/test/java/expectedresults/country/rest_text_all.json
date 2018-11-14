@@ -1,0 +1,14 @@
+{
+  "RestResponse" : {
+    "messages" : [ "Total [2] records found." ],
+    "result" : [ {
+      "name" : "Marshall Islands",
+      "alpha2_code" : "MH",
+      "alpha3_code" : "MHL"
+    }, {
+      "name" : "Wallis and Futuna",
+      "alpha2_code" : "WF",
+      "alpha3_code" : "WLF"
+    } ]
+  }
+}

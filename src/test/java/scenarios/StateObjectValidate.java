@@ -1,9 +1,7 @@
 package scenarios;
 
-import assertions.StateServiceAssertions;
 import dto.stateservisedto.StateResponseDTO;
-import io.restassured.response.Response;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import steps.StepsForStateService;
 import transfer.Context;
@@ -11,72 +9,87 @@ import transfer.Context;
 
 public class StateObjectValidate {
 
-    StateServiceAssertions assertion = new StateServiceAssertions();
-    StepsForStateService step = new StepsForStateService();
 
+    private final StepsForStateService step = new StepsForStateService();
 
-    @BeforeMethod
-    public void setUp() {
+    @Test(dataProvider = "statesAll")
+    public void successGetAllStatesResponse(String country, String expectedResult) {
 
-        step.initialiseBaseURI("HOST_STATE");
+        Context<StateResponseDTO> context = step.getStateByName(country, "all");
+        step.responseValidation(context, expectedResult);
+    }
+
+    @Test(dataProvider = "stateNothing")
+    public void getNothingMatchingFound(String country, String state, String expectedResult) {
+
+        Context<StateResponseDTO> context = step.getStateByName(country, state);
+        step.responseValidation(context, expectedResult);
 
     }
 
-    @Test
-    public void successGetAllStatesResponse() {
+    @Test(dataProvider = "successOneState")
+    public void successGetOneStateResponse(String country, String state, String expectedResult) {
 
-        Response getResponse = step.sendGetRequest("ALL_STATES_RESOURCE");
-        StateResponseDTO stateResponse = step.convertResponseToStateObject(getResponse);
-
-        step.basicResponseAssertion(getResponse, StateServiceAssertions.MESSAGE_SUCCESS_LIST, stateResponse, null, null);
-        assertion.assertResponseContainsListOfAllStates(StateServiceAssertions.USA_STATES_COUNT, stateResponse);
+        Context<StateResponseDTO> context = step.getStateByName(country, state);
+        step.responseValidation(context, expectedResult);
     }
 
-    @Test
-    public void successGetOneStateResponseNewVersion() {
-        Context<StateResponseDTO> context = step.getStateByName("AK");
-        assertion.assertResponseContainsCorrectStateInfo("ONE_STATE_RESOURCE", context.getObjectFromResponse());
+    @Test(dataProvider = "textSearch")
+    public void getStateByAnyFreeFormText(String country, String text, String expectedResult) {
+        Context<StateResponseDTO> context = step.getStateByText(country, text);
+        step.responseValidation(context, expectedResult);
     }
 
-    @Test
-    public void successGetOneStateResponse() {
+    @Test(dataProvider = "textSearchNothing")
+    public void getNothingStateByAnyFreeFormText(String country, String text, String expectedResult) {
 
-        Response getResponse = step.sendGetRequest("ONE_STATE_RESOURCE");
-        StateResponseDTO stateResponse = step.convertResponseToStateObject(getResponse);
-
-        step.basicResponseAssertion(getResponse, StateServiceAssertions.MESSAGE_SUCCESS_STATE, stateResponse, "USA_STATES_COUNT", null);
-        assertion.assertResponseContainsCorrectStateInfo("ONE_STATE_RESOURCE", stateResponse);
+        Context<StateResponseDTO> context = step.getStateByText(country, text);
+        step.responseValidation(context, expectedResult);
     }
 
-
-    @Test
-    public void getNothingMatchingFound() {
-
-        Response getResponse = step.sendGetRequest("INVALID_STATE_RESOURCE");
-        StateResponseDTO stateResponse = step.convertResponseToStateObject(getResponse);
-
-        step.basicResponseAssertion(getResponse, StateServiceAssertions.MESSAGE_NOTHING, stateResponse, "INVALID_STATE_RESOURCE", null);
+    @DataProvider
+    public static Object[][] statesAll() {
+        return new Object[][]{
+                {"USA", "src/test/java/expectedresults/state/resp_USA_all.json"},
+                {"IND", "src/test/java/expectedresults/state/resp_IND_all.json"},
+                {"UKR", "src/test/java/expectedresults/state/resp_UKR_all.json"}
+        };
     }
 
-
-    @Test
-    public void getStateByAnyFreeFormText() {
-
-        Response getResponse = step.sendGetWithText("KEY_TEXT", "TEXT", "SEARCH_STATE_RESOURCE");
-        StateResponseDTO stateResponse = step.convertResponseToStateObject(getResponse);
-
-        step.basicResponseAssertion(getResponse, StateServiceAssertions.MESSAGE_SUCCESS_LIST, stateResponse, "SEARCH_STATE_RESOURCE", "TEXT");
-        assertion.assertResponseContainsListOfAllStates(StateServiceAssertions.COUNT_WA_STATES, stateResponse);
+    @DataProvider
+    public static Object[][] stateNothing() {
+        return new Object[][]{
+                {"USA", "al", "src/test/java/expectedresults/state/resp_USA_al.json"},
+                {"USA", "ak", "src/test/java/expectedresults/state/resp_USA_ak_no.json"},
+                {"IND", "AK", "src/test/java/expectedresults/state/resp_IND_AK.json"}
+        };
     }
 
-
-    @Test
-    public void getNothingStateByAnyFreeFormText() {
-
-        Response getResponse = step.sendGetWithText("KEY_TEXT", "INVALID_TEXT", "SEARCH_STATE_RESOURCE");
-        StateResponseDTO stateResponse = step.convertResponseToStateObject(getResponse);
-
-        step.basicResponseAssertion(getResponse, StateServiceAssertions.MESSAGE_NOTHING, stateResponse, "SEARCH_STATE_RESOURCE", "INVALID_TEXT");
-        assertion.assertResponseContainsListOfAllStates(StateServiceAssertions.NOTHING, stateResponse);
+    @DataProvider
+    public static Object[][] successOneState() {
+        return new Object[][]{
+                {"USA", "AK", "src/test/java/expectedresults/state/resp_USA_AK.json"},
+                {"IND", "AP", "src/test/java/expectedresults/state/resp_IND_AP.json"},
+                {"USA", "WA", "src/test/java/expectedresults/state/resp_USA_WA.json"}
+        };
     }
+
+    @DataProvider
+    public static Object[][] textSearch() {
+        return new Object[][]{
+                {"USA", "wa", "src/test/java/expectedresults/state/resp_USA_text_wa.json"},
+                {"USA", "se", "src/test/java/expectedresults/state/resp_USA_text_se.json"},
+                {"IND", "ra", "src/test/java/expectedresults/state/resp_IND_text_ra.json"}
+        };
+    }
+
+    @DataProvider
+    public static Object[][] textSearchNothing() {
+        return new Object[][]{
+                {"USA", "wj", "src/test/java/expectedresults/state/resp_USA_text_wj.json"},
+                {"ind", "rp", "src/test/java/expectedresults/state/resp_IND_rp.json"},
+                {"usa", "sea", "src/test/java/expectedresults/state/resp_USA_sea.json"}
+        };
+    }
+
 }

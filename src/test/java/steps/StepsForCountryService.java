@@ -2,22 +2,44 @@ package steps;
 
 import assertions.CountryServiceAssertions;
 import dto.countryservisedto.CountryResponseDTO;
-import io.restassured.response.Response;
 
 import org.apache.http.HttpStatus;
-import transfer.CountryResponseTransfer;
+import transfer.Api;
+import transfer.Context;
 
-public class StepsForCountryService extends MainSteps {
+import util.GetObjectFromJsonUtil;
+import transfer.routers.country.*;
+import util.FileReaderUtil;
 
-    public CountryResponseDTO convertResponseToCountryObject(Response response) {
+import java.io.BufferedReader;
 
-        CountryResponseDTO countryResponseDTO = CountryResponseTransfer.countryObjectRepresentation(response);
-        return countryResponseDTO;
+
+public class StepsForCountryService {
+
+    private final ByIsoCode searchByIsoCode = new Api().getCountry().getByIso3Code();
+    private final ByText searchByText = new Api().getCountry().getByText();
+    private final GetAll searchAll = new Api().getCountry().getGetAll();
+
+    public void responseValidation(Context<CountryResponseDTO> context, String expectedResult) {
+
+        CountryServiceAssertions.assertStatusCode(context.getResponseStatusCode(), HttpStatus.SC_OK);
+        CountryServiceAssertions.assertObjectMessage(context.getObjectFromResponse(), getExpectedResult(expectedResult).getObjectFromFile());
     }
 
-    public void basicResponseAssertion(Response getResponse, String expectedMessage, CountryResponseDTO countryResponseDTO, String resourseURL, String value) {
+    public Context<CountryResponseDTO> getCountryByIsoCode(String code, String alphaCode) {
+        return searchByIsoCode.get(code, alphaCode);
+    }
 
-        CountryServiceAssertions.assertStatusCode(getResponse, HttpStatus.SC_OK);
-        CountryServiceAssertions.assertResponseMessage(expectedMessage, countryResponseDTO,  resourseURL, value);
+    public Context<CountryResponseDTO> getStateByText(String text) {
+        return searchByText.get(text);
+    }
+
+    public Context<CountryResponseDTO> getAll() {
+        return searchAll.get();
+    }
+
+    private GetObjectFromJsonUtil<CountryResponseDTO> getExpectedResult(String filePath) {
+        BufferedReader reader = FileReaderUtil.readFile(filePath);
+        return new GetObjectFromJsonUtil<>(reader, CountryResponseDTO.class);
     }
 }

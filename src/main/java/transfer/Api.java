@@ -3,7 +3,6 @@ package transfer;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
-import transfer.routers.State;
 
 @Getter
 @EqualsAndHashCode
@@ -11,5 +10,6 @@ import transfer.routers.State;
 public class Api {
 
     private State state = new State("");
+    private Country country = new Country("");
 
 }

@@ -1,0 +1,14 @@
+{
+  "RestResponse" : {
+    "messages" : [ "State found matching code [WA]." ],
+    "result" : {
+      "id" : 47,
+      "country" : "USA",
+      "name" : "Washington",
+      "abbr" : "WA",
+      "area" : "184661SKM",
+      "largest_city" : "Seattle",
+      "capital" : "Olympia"
+    }
+  }
+}

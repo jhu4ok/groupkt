@@ -1,0 +1,14 @@
+{
+  "RestResponse" : {
+    "messages" : [ "State found matching code [AK]." ],
+    "result" : {
+      "id" : 2,
+      "country" : "USA",
+      "name" : "Alaska",
+      "abbr" : "AK",
+      "area" : "1723337SKM",
+      "largest_city" : "Anchorage",
+      "capital" : "Juneau"
+    }
+  }
+}

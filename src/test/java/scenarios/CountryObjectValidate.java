@@ -1,95 +1,118 @@
 package scenarios;
 
-import assertions.CountryServiceAssertions;
-
-
 import dto.countryservisedto.CountryResponseDTO;
-import io.restassured.response.Response;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import steps.StepsForCountryService;
+import transfer.Context;
 
 
 public class CountryObjectValidate {
 
-    CountryServiceAssertions assertion = new CountryServiceAssertions();
-    StepsForCountryService step = new StepsForCountryService();
-
-
-    @BeforeMethod
-    public void setUp() {
-
-        step.initialiseBaseURI("HOST_COUNTRY");
-    }
-
+    private final StepsForCountryService step = new StepsForCountryService();
 
 
     @Test
     public void successGetAllCountriesList() {
 
-        Response getResponse = step.sendGetRequest("ALL_COUNTRIES_RESOURCE");
-        CountryResponseDTO countryResponseDTO = step.convertResponseToCountryObject(getResponse);
-
-        step.basicResponseAssertion(getResponse, CountryServiceAssertions.MESSAGE_SUCCESS_LIST, countryResponseDTO, "ALL_COUNTRIES_RESOURCE", null);
-        assertion.assertResponseContainsListOfAllCountries(CountryServiceAssertions.ALL_COUNTRIES_COUNT, countryResponseDTO);
+        Context<CountryResponseDTO> context = step.getAll();
+        step.responseValidation(context, "src/test/java/expectedresults/country/resp_get_all.json");
     }
 
-    @Test
-    public void getCountryByTwoCharISO() {
+    @Test(dataProvider = "iso2Search")
+    public void getCountryByIso2Code(String code,String country, String expectedResult) {
 
-        Response getResponse = step.sendGetRequest("ISO2CODE_RESOURCE");
-        CountryResponseDTO countryResponseDTO = step.convertResponseToCountryObject(getResponse);
-
-        step.basicResponseAssertion(getResponse, CountryServiceAssertions.MESSAGE_SUCCESS_COUNTRY, countryResponseDTO, "ISO2CODE_RESOURCE", null);
-        assertion.assertResponseContainsCorrectCountryInfo("ISO2CODE_RESOURCE", countryResponseDTO);
+        Context<CountryResponseDTO> context = step.getCountryByIsoCode(code,country);
+        step.responseValidation(context, expectedResult);
     }
 
-    @Test
-    public void getNothingMatchingFoundByTwoCharISO() {
+    @Test(dataProvider = "iso2SearchNothing")
+    public void getNothingByIso2Code(String code,String country, String expectedResult) {
 
-        Response getResponse = step.sendGetRequest("ISO2CODE_INVALID_RESOURCE");
-        CountryResponseDTO countryResponseDTO = step.convertResponseToCountryObject(getResponse);
-
-        step.basicResponseAssertion(getResponse, CountryServiceAssertions.MESSAGE_NOTHING, countryResponseDTO, "ISO2CODE_INVALID_RESOURCE", null);
+        Context<CountryResponseDTO> context = step.getCountryByIsoCode(code, country);
+        step.responseValidation(context, expectedResult);
     }
 
-    @Test
-    public void getCountryByThreeCharISO() {
+    @Test(dataProvider = "iso3Search")
+    public void getCountryByIso3Code(String code,String country, String expectedResult) {
 
-        Response getResponse = step.sendGetRequest("ISO3CODE_RESOURCE");
-        CountryResponseDTO countryResponseDTO = step.convertResponseToCountryObject(getResponse);
-
-        step.basicResponseAssertion(getResponse, CountryServiceAssertions.MESSAGE_SUCCESS_COUNTRY, countryResponseDTO, "ISO3CODE_RESOURCE", null);
-        assertion.assertResponseContainsCorrectCountryInfo("ISO3CODE_RESOURCE", countryResponseDTO);
+        Context<CountryResponseDTO> context = step.getCountryByIsoCode(code,country);
+        step.responseValidation(context, expectedResult);
     }
 
-    @Test
-    public void getNothingMatchingFoundByThreeCharISO() {
+    @Test(dataProvider = "iso3SearchNothing")
+    public void getNothingByIso3Code(String code, String country, String expectedResult) {
 
-        Response getResponse = step.sendGetRequest("ISO3CODE_INVALID_RESOURCE");
-        CountryResponseDTO countryResponseDTO = step.convertResponseToCountryObject(getResponse);
+        Context<CountryResponseDTO> context = step.getCountryByIsoCode(code, country);
+        step.responseValidation(context, expectedResult);
 
-        step.basicResponseAssertion(getResponse, CountryServiceAssertions.MESSAGE_NOTHING, countryResponseDTO, "ISO3CODE_INVALID_RESOURCE", null);
     }
 
-    @Test
-    public void getCountriesByAnyFreeFormText() {
+    @Test(dataProvider = "textSearch")
+    public void getCountriesByAnyFreeFormText(String text, String expectedResult) {
 
-        Response getResponse = step.sendGetWithText("KEY_TEXT", "TEXT", "SEARCH_COUNTRY_RESOURCE");
-        CountryResponseDTO countryResponseDTO = step.convertResponseToCountryObject(getResponse);
-
-        step.basicResponseAssertion(getResponse, CountryServiceAssertions.MESSAGE_SUCCESS_LIST, countryResponseDTO, "SEARCH_COUNTRY_RESOURCE", "TEXT");
-        assertion.assertResponseContainsListOfAllCountries(CountryServiceAssertions.COUNT_WA_COUNTRIES, countryResponseDTO);
+        Context<CountryResponseDTO> context = step.getStateByText(text);
+        step.responseValidation(context, expectedResult);
     }
 
-    @Test
-    public void getNothingMatchingFoundByAnyFreeFormText() {
+    @Test(dataProvider = "textSearchNothing")
+    public void getNothingMatchingFoundByAnyFreeFormText(String text, String expectedResult) {
 
-        Response getResponse = step.sendGetWithText("KEY_TEXT", "INVALID_TEXT", "SEARCH_COUNTRY_RESOURCE");
-        CountryResponseDTO countryResponseDTO = step.convertResponseToCountryObject(getResponse);
+        Context<CountryResponseDTO> context = step.getStateByText(text);
+        step.responseValidation(context, expectedResult);
+    }
 
-        step.basicResponseAssertion(getResponse, CountryServiceAssertions.MESSAGE_NOTHING, countryResponseDTO, "SEARCH_COUNTRY_RESOURCE", "INVALID_TEXT");
-        assertion.assertResponseContainsListOfAllCountries(CountryServiceAssertions.NOTHING, countryResponseDTO);
+    @DataProvider
+    public static Object[][] iso2Search() {
+        return new Object[][]{
+                {"iso2code","UA", "src/test/java/expectedresults/country/resp_iso2_ua.json"},
+                {"iso2code","RU", "src/test/java/expectedresults/country/resp_iso2_ru.json"},
+                {"iso2code","CZ", "src/test/java/expectedresults/country/resp_iso2_cz.json"}
+        };
+    }
+
+    @DataProvider
+    public static Object[][] iso2SearchNothing() {
+        return new Object[][]{
+                {"iso2code", "UJ", "src/test/java/expectedresults/country/resp_iso2_uj.json"},
+                {"iso2code", "fg", "src/test/java/expectedresults/country/resp_iso2_fg.json"},
+                {"iso2code","USA", "src/test/java/expectedresults/country/resp_iso2_USA.json"}
+        };
+    }
+
+    @DataProvider
+    public static Object[][] iso3Search() {
+        return new Object[][]{
+                {"iso3code","UKR", "src/test/java/expectedresults/country/resp_iso3_ua.json"},
+                {"iso3code","USA", "src/test/java/expectedresults/country/resp_iso3_usa.json"},
+                {"iso3code","ESP", "src/test/java/expectedresults/country/resp_iso3_esp.json"}
+        };
+    }
+
+    @DataProvider
+    public static Object[][] iso3SearchNothing() {
+        return new Object[][]{
+                {"iso3code", "UKJ", "src/test/java/expectedresults/country/resp_iso3_ukj.json"},
+                {"iso3code", "ECP", "src/test/java/expectedresults/country/resp_iso3_ecp.json"},
+                {"iso3code","US", "src/test/java/expectedresults/country/resp_iso3_US.json"}
+        };
+    }
+
+    @DataProvider
+    public static Object[][] textSearch() {
+        return new Object[][]{
+                {"wa", "src/test/java/expectedresults/country/resp_text_wa.json"},
+                {"all", "src/test/java/expectedresults/country/rest_text_all.json"},
+                {"nor", "src/test/java/expectedresults/country/resp_text_nor.json"}
+        };
+    }
+    @DataProvider
+    public static Object[][] textSearchNothing() {
+        return new Object[][]{
+                {"wj", "src/test/java/expectedresults/country/resp_text_wj.json"},
+                {"Epcx", "src/test/java/expectedresults/country/resp_text_epcx.json"},
+                {"1", "src/test/java/expectedresults/country/resp_text_1.json"}
+        };
     }
 
 }

@@ -1,0 +1,38 @@
+{
+  "RestResponse" : {
+    "messages" : [ "Total [4] records found." ],
+    "result" : [ {
+      "id" : 8,
+      "country" : "USA",
+      "name" : "Delaware",
+      "abbr" : "DE",
+      "area" : "6446SKM",
+      "largest_city" : "Wilmington",
+      "capital" : "Dover"
+    }, {
+      "id" : 11,
+      "country" : "USA",
+      "name" : "Hawaii",
+      "abbr" : "HI",
+      "area" : "6423SKM",
+      "largest_city" : "Honolulu",
+      "capital" : "Honolulu"
+    }, {
+      "id" : 15,
+      "country" : "USA",
+      "name" : "Iowa",
+      "abbr" : "IA",
+      "area" : "55857SKM",
+      "largest_city" : "Des Moines",
+      "capital" : "Des Moines"
+    }, {
+      "id" : 47,
+      "country" : "USA",
+      "name" : "Washington",
+      "abbr" : "WA",
+      "area" : "184661SKM",
+      "largest_city" : "Seattle",
+      "capital" : "Olympia"
+    } ]
+  }
+}

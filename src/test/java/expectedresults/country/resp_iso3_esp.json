@@ -1,0 +1,10 @@
+{
+  "RestResponse" : {
+    "messages" : [ "Country found matching code [ESP]." ],
+    "result" : {
+      "name" : "Spain",
+      "alpha2_code" : "ES",
+      "alpha3_code" : "ESP"
+    }
+  }
+}
